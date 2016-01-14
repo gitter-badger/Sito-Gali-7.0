@@ -80,3 +80,7 @@ $headings-font-family:       inherit !default;
 
 @import 'bootstrap';
 @import 'pingendo-bootstrap';
+
+.section .background-video {
+  object-position: center left !important ;
+}
