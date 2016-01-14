@@ -93,3 +93,9 @@ $headings-font-family:       inherit !default;
 .section-fill-height {
   max-height: 70%;
 }
+
+.sticky {
+	position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
