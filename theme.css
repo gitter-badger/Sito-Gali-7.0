@@ -4879,3 +4879,10 @@ a.text-danger:hover {
 
 .section .background-video {
   object-position: center left !important; }
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid green; }
+
+.section-fill-height {
+  max-height: 70%; }
