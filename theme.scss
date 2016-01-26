@@ -12,7 +12,7 @@ $gray-lightest:             #f7f7f9 !default;
 $brand-primary:             #0275d8 !default;
 $brand-success:             #5cb85c !default;
 $brand-info:                #5bc0de !default;
-$brand-warning:             #CECFD9 !default;
+$brand-warning:             #f0ad4e !default;
 $brand-danger:              #d9534f !default;
 
 
@@ -86,8 +86,8 @@ $headings-font-family:       inherit !default;
 }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.9);
-  border-bottom: 1px solid green;
+  background-color: black;
+  border-bottom: 1px solid grey;
 }
 
 .section-fill-height {
