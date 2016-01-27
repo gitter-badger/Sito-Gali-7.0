@@ -1,197 +1,438 @@
 <html><head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="theme.css" rel="stylesheet" type="text/css">
-    </head><body>
-        <div class="navbar navbar-light">
-            <div class="">
-                <a class="m-a-0 navbar-brand p-a-0" href="#"> <img src="images/index/logo.png" class="img-fluid">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="theme.css" rel="stylesheet" type="text/css">
+</head><body>
+  <div class="navbar navbar-dark">
+    <div class="">
+      <a class="m-l-3 navbar-brand p-a-0" href="#"> <img src="images/index/logo_orange.png" class="img-fluid">
       </a>
-            </div>
-            <ul class="nav navbar-nav pull-right">
-                <li class="active m-a-0 nav-item text-center">
-                    <a class="nav-link m-t-sm " href="#"><i class="ar fa fa-2x fa-building-o fa-fw text-success"></i>
-          <br><span>Costruzioni</span>
-        </a>
-                </li>
-                <li class="nav-item active text-center">
-                    <a class="nav-link" href="#"><i class="ar fa fa-2x fa-angle-up fa-fw text-success"></i>
-          <br><span>Tetti e solai</span>
-        </a>
-                </li>
-                <li class="nav-item active text-center">
-                    <a class="nav-link" href="#"><i class="ar fa fa-2x fa-fw fa-pagelines text-success"></i>
-           <br><span>Outdoor</span>
-        </a>
-                </li>
-                <li class="nav-item active text-center">
-                    <a class="nav-link" href="#"><i class="ar fa fa-2x fa-fw fa-square-o text-success"></i>
-           <br><span>Pavimenti</span>
-        </a>
-                </li>
-            </ul>
+    </div>
+    <ul class="nav navbar-nav pull-right text-xs-center">
+      <li class="active m-a-0 nav-item text-center">
+        <a class="m-t-sm m-r-3 nav-link" href="#"><i class="-o ar fa fa-2x fa-fw fa-home text-warning"></i>
+          <br><span><b>COSTRUZIONI</b></span></a>
+      </li>
+      <li class="active m-l-3 m-r-3 nav-item text-center">
+        <a class="nav-link" href="#"><i class="ar fa fa-2x fa-angle-up fa-fw text-warning"></i>
+          <br><span><b>TETTI E SOLAI</b></span></a>
+      </li>
+      <li class="nav-item m-l-3 m-r-3 active text-center">
+        <a class="nav-link" href="#"><i class="ar fa fa-2x fa-fw fa-reorder text-warning"></i>
+           <br><b>RIVESTIMENTI</b></a>
+      </li>
+      <li class="nav-item m-l-3 active text-center">
+        <a class="nav-link" href="#"><i class="ar fa fa-2x fa-fw fa-square-o text-warning"></i>
+           <br><b>PAVIMENTI</b></a>
+      </li>
+    </ul>
+  </div>
+  <div class="p-a-0 section">
+    <div class="container-fluid"></div>
+  </div>
+  <div class="section">
+    <div class="container-fluid m-a-0 p-a-0 text-justify"></div>
+  </div>
+  <div class="section section-fill-height">
+    <div class="background-video-holder">
+      <video class="background-video" src="https://player.vimeo.com/external/152253316.hd.mp4?s=0b543790d1acde163287fae9a9c8944e88752f19&amp;profile_id=113" autoplay="autoplay" loop="loop"></video>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center text-xs-center">
+          <h1 class="display-4 pi-draggable pi-item text-inverse">
+                            <b>Download documenti</b>
+                        </h1>
+          <p class="lead pi-draggable pi-item text-inverse">Lavoriamo con passione per dare forma al tuo progetto</p>
         </div>
-        <div class="p-y-3 section">
-            <div class="container-fluid">
-                <div class="bg-inverse row"><div class="col-md-12"><h1 class="display-2 text-xs-left">Documenti</h1></div></div><div class="row">
-                    <div class="col-lg-2 sticky">
-                        <ul class="list-group m-y-2" draggable="true">
-                            <li class="list-group-item">
-                                <a href="#isolanti">Isolanti</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#tetti">Tetti</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#pavimenti">Pavimenti</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-10">
-                        <h1 class="bg-primary m-y-2 text-xs-center" id="isolanti">Isolanti</h1>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="card">
-                                    <div class="card-block">
-                                        <h4 class="card-title" contenteditable="true">Fibra di legno Gutex Standard
-                                            <br>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-y-3 section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2 sticky">
+          <ul class="list-group m-y-2" draggable="true">
+            <li class="list-group-item">
+              <a href="#isolanti">Isolanti</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#tetti">Tetti</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#pavimenti">Pavimenti</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-10">
+          <h1 class="m-t-2 text-warning text-xs-center" id="isolanti">L'azienda</h1>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Brochure &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>
                                         </h4>
-                                        <h6 class="card-subtitle text-muted">Spessore 2 cm</h6>
-                                    </div>
-                                    <img class="card-img-top img-fluid" src="http://v4.pingendo.com/assets/photos/food/photo-3.jpg" alt="Card image">
-                                    <div class="card-block">
-                                        <div class="row text-xs-center">
-                                            <div class="col-xs-6">
-                                                <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw fa-file-pdf-o"></i></a>
-                                                <p class="">PDF</p>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <a class="text-muted"><i class="fa fa-3x -pdf-o fa-fw fa-arrow-down"></i></a>
-                                                <p class="">DXF</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="card">
-                                    <div class="card-block">
-                                        <h4 class="card-title">Fibra di legno Gutex Thermosafe</h4>
-                                        <h6 class="card-subtitle text-muted">Spessore 6/8cm</h6>
-                                    </div>
-                                    <img class="card-img-top img-fluid" src="http://v4.pingendo.com/assets/photos/food/photo-3.jpg" alt="Card image">
-                                    <div class="card-block">
-                                        <div class="row text-xs-center">
-                                            <div class="col-xs-6">
-                                                <a class="text-muted"><i class="fa fa-3x -pdf-o fa-fw fa-arrow-down"></i></a><p class="">PDF</p>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <a class="text-muted"><i class="fa fa-3x -pdf-o fa-fw fa-caret-down"></i></a><p class="">PDF</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <h1 class="m-y-2" id="tetti">
-                            <br>Tetti
-                            <br>
-                        </h1>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="card">
-                                    <div class="card-block">
-                                        <h4 class="card-title">Card title</h4>
-                                        <h6 class="card-subtitle text-muted">Support card subtitle</h6>
-                                    </div>
-                                    <img class="card-img-top img-fluid" src="http://v4.pingendo.com/assets/photos/food/photo-3.jpg" alt="Card image">
-                                    <div class="card-block">
-                                        <div class="row text-xs-center">
-                                            <div class="col-xs-6">
-                                                <a><i class="fa fa-3x fa-file-pdf-o fa-fw"></i></a>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <a><i class="fa fa-3x fa-file-pdf-o fa-fw"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="card">
-                                    <div class="card-block">
-                                        <h4 class="card-title">Card title</h4>
-                                        <h6 class="card-subtitle text-muted">Support card subtitle</h6>
-                                    </div>
-                                    <img class="card-img-top img-fluid" src="http://v4.pingendo.com/assets/photos/food/photo-3.jpg" alt="Card image">
-                                    <div class="card-block">
-                                        <div class="row text-xs-center">
-                                            <div class="col-xs-6">
-                                                <a><i class="fa fa-3x fa-file-pdf-o fa-fw"></i></a>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <a><i class="fa fa-3x fa-file-pdf-o fa-fw"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <h1 class="m-y-2" id="pavimenti">
-                            <br>Pavimenti
-                            <br>
-                        </h1>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="card">
-                                    <div class="card-block">
-                                        <h4 class="card-title">Card title</h4>
-                                        <h6 class="card-subtitle text-muted">Support card subtitle</h6>
-                                    </div>
-                                    <img class="card-img-top img-fluid" src="http://v4.pingendo.com/assets/photos/food/photo-3.jpg" alt="Card image">
-                                    <div class="card-block">
-                                        <div class="row text-xs-center">
-                                            <div class="col-xs-6">
-                                                <a><i class="fa fa-3x fa-file-pdf-o fa-fw"></i></a>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <a><i class="fa fa-3x fa-file-pdf-o fa-fw"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="card">
-                                    <div class="card-block">
-                                        <h4 class="card-title">Card title</h4>
-                                        <h6 class="card-subtitle text-muted">Support card subtitle</h6>
-                                    </div>
-                                    <img class="card-img-top img-fluid" src="http://v4.pingendo.com/assets/photos/food/photo-3.jpg" alt="Card image">
-                                    <div class="card-block">
-                                        <div class="row text-xs-center">
-                                            <div class="col-xs-6">
-                                                <a><i class="fa fa-3x fa-file-pdf-o fa-fw"></i></a>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <a><i class="fa fa-3x fa-file-pdf-o fa-fw"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
+                <img class="card-img-top img-fluid" src="http://v4.pingendo.com/assets/photos/food/cover-1.jpg" alt="Card image">
+
+              </div>
             </div>
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Presentazione aziendale</h4>
+
+                </div>
+                <img class="card-img-top img-fluid" src="http://v4.pingendo.com/assets/photos/food/photo-2.jpg" alt="Card image">
+
+              </div>
+            </div>
+          </div>
+          <h1 class="m-t-3 text-warning text-xs-center" id="tetti">Cataloghi
+                        </h1>
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Costruzioni</h4>
+                  
+                </div>
+                <img class="card-img-top img-fluid" src="http://v4.pingendo.com/assets/photos/business/cover-1.jpg" alt="Card image">
+
+              </div>
+            </div>
+            <div class="col-lg-3  ">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Tetti e solai</h4>
+                  
+                </div>
+                <img class="card-img-top img-fluid" src="http://v4.pingendo.com/assets/photos/business/photo-1.jpg" alt="Card image">
+
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Pavimenti</h4>
+                  
+                </div>
+                <img class="card-img-top img-fluid" src="http://v4.pingendo.com/assets/photos/business/photo-2.jpg" alt="Card image">
+                <div class="card-block"></div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Esterni</h4>
+                  
+                </div>
+                <img class="card-img-top img-fluid" src="http://v4.pingendo.com/assets/photos/business/photo-3.jpg" alt="Card image">
+
+              </div>
+            </div>
+          </div>
+          <h1 class="m-t-3 text-warning text-xs-center" id="pavimenti">Schede tecniche
+                        </h1>
+          <h3 class="m-y-2 text-muted" id="pavimenti">Costruzioni</h3>
+          <div class="row">
+            <div class="col-lg-2">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Tecnologia</h4>
+                  <h6 class="card-subtitle text-muted">Foglio informativo</h6>
+                </div>
+                <img class="card-img-top img-fluid m-b-1" src="http://v4.pingendo.com/assets/photos/realestate/cover-1.jpg" alt="Card image">
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw fa-file-pdf-o"></i></a>
+                  <p class="text-xs-center">PDF</p>
+                </div>
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw -pdf-o fa-pencil-square-o"></i></a>
+                  <p class="text-xs-center">DXF</p>
+                </div>
+                <div class="card-block"></div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">FAQ</h4>
+                  <h6 class="card-subtitle text-muted">Le risposte utili</h6>
+                </div>
+                <img class="card-img-top img-fluid m-b-1" src="http://v4.pingendo.com/assets/photos/business/cover-1.jpg" alt="Card image">
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw fa-file-pdf-o"></i></a>
+                  <p class="text-xs-center">PDF</p>
+                </div>
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw -pdf-o fa-pencil-square-o"></i></a>
+                  <p class="text-xs-center">DXF</p>
+                </div>
+                <div class="card-block"></div>
+              </div>
+            </div>
+
+
+          </div>
+          <h3 class="m-y-2 text-muted" id="pavimenti">Tetti e solai</h3>
+          <div class="row">
+            <div class="col-lg-2">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Lamellare</h4>
+                  <h6 class="card-subtitle text-muted">Legno</h6>
+                </div>
+                <img class="card-img-top img-fluid m-b-1" src="http://v4.pingendo.com/assets/photos/realestate/photo-1.jpg" alt="Card image">
+                <div class="col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-xs-6 text-xs-center">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-2x fa-file-pdf-o fa-fw"></i></a>
+                  <p class="text-xs-center">PDF</p>
+                </div>
+                <div class="col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-xs-6 text-xs-center">
+                  <a class="text-muted"><i class="-down -download -pdf-o -pdf-o fa fa-2x fa-fw fa-pencil-square-o"></i></a>
+                  <p class="text-xs-center">DXF</p>
+                </div>
+                <div class="card-block"></div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Kvh</h4>
+                  <h6 class="card-subtitle text-muted">Legno</h6>
+                </div>
+                <img class="card-img-top img-fluid m-b-1" src="http://v4.pingendo.com/assets/photos/realestate/photo-2.jpg" alt="Card image">
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw fa-file-pdf-o"></i></a>
+                  <p class="text-xs-center">PDF</p>
+                </div>
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw -pdf-o fa-pencil-square-o"></i></a>
+                  <p class="text-xs-center">DXF</p>
+                </div>
+                <div class="card-block"></div>
+              </div>
+            </div>
+<div class="col-md-2">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Massiccio</h4>
+                  <h6 class="card-subtitle text-muted">Legno</h6>
+                </div>
+                <img class="card-img-top img-fluid m-b-1" src="http://v4.pingendo.com/assets/photos/realestate/photo-3.jpg" alt="Card image">
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw fa-file-pdf-o"></i></a>
+                  <p class="text-xs-center">PDF</p>
+                </div>
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw -pdf-o fa-pencil-square-o"></i></a>
+                  <p class="text-xs-center">DXF</p>
+                </div>
+                <div class="card-block"></div>
+              </div>
+            </div>
+<div class="col-md-2">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">X-Lam</h4>
+                  <h6 class="card-subtitle text-muted">Legno</h6>
+                </div>
+                <img class="card-img-top img-fluid m-b-1" src="http://v4.pingendo.com/assets/photos/fashion/cover-1.jpg" alt="Card image">
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw fa-file-pdf-o"></i></a>
+                  <p class="text-xs-center">PDF</p>
+                </div>
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw -pdf-o fa-pencil-square-o"></i></a>
+                  <p class="text-xs-center">DXF</p>
+                </div>
+                <div class="card-block"></div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Sagome</h4>
+                  <h6 class="card-subtitle text-muted">Legno</h6>
+                </div>
+                <img class="card-img-top img-fluid m-b-1" src="http://v4.pingendo.com/assets/photos/fashion/photo-1.jpg" alt="Card image">
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw fa-file-pdf-o"></i></a>
+                  <p class="text-xs-center">PDF</p>
+                </div>
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw -pdf-o fa-pencil-square-o"></i></a>
+                  <p class="text-xs-center">DXF</p>
+                </div>
+                <div class="card-block"></div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">FAQ</h4>
+                  <h6 class="card-subtitle text-muted">Le risposte utili</h6>
+                </div>
+                <img class="card-img-top img-fluid m-b-1" src="http://v4.pingendo.com/assets/photos/fashion/photo-2.jpg" alt="Card image">
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw fa-file-pdf-o"></i></a>
+                  <p class="text-xs-center">PDF</p>
+                </div>
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw -pdf-o fa-pencil-square-o"></i></a>
+                  <p class="text-xs-center">DXF</p>
+                </div>
+                <div class="card-block"></div>
+              </div>
+            </div>
+            
+          </div><div class="row">
+            <div class="col-lg-2">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Comfort 12</h4>
+                  <h6 class="card-subtitle text-muted">Stratigrafia</h6>
+                </div>
+                <img class="card-img-top img-fluid m-b-1" src="http://v4.pingendo.com/assets/photos/fashion/photo-3.jpg" alt="Card image">
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw fa-file-pdf-o"></i></a>
+                  <p class="text-xs-center">PDF</p>
+                </div>
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw -pdf-o fa-pencil-square-o"></i></a>
+                  <p class="text-xs-center">DXF</p>
+                </div>
+                <div class="card-block"></div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Comfort 14</h4>
+                  <h6 class="card-subtitle text-muted">Stratigrafia</h6>
+                </div>
+                <img class="card-img-top img-fluid m-b-1" src="http://v4.pingendo.com/assets/photos/apple/cover-1.jpg" alt="Card image">
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw fa-file-pdf-o"></i></a>
+                  <p class="text-xs-center">PDF</p>
+                </div>
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw -pdf-o fa-pencil-square-o"></i></a>
+                  <p class="text-xs-center">DXF</p>
+                </div>
+                <div class="card-block"></div>
+              </div>
+            </div>
+<div class="col-md-2">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Comfort 16</h4>
+                  <h6 class="card-subtitle text-muted">Stratigrafia</h6>
+                </div>
+                <img class="card-img-top img-fluid m-b-1" src="http://v4.pingendo.com/assets/photos/apple/photo-3.jpg" alt="Card image">
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw fa-file-pdf-o"></i></a>
+                  <p class="text-xs-center">PDF</p>
+                </div>
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw -pdf-o fa-pencil-square-o"></i></a>
+                  <p class="text-xs-center">DXF</p>
+                </div>
+                <div class="card-block"></div>
+              </div>
+            </div>
+<div class="col-md-2">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Climat 14</h4>
+                  <h6 class="card-subtitle text-muted">Stratigrafia</h6>
+                </div>
+                <img class="card-img-top img-fluid m-b-1" src="http://v4.pingendo.com/assets/photos/food/photo-1.jpg" alt="Card image">
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw fa-file-pdf-o"></i></a>
+                  <p class="text-xs-center">PDF</p>
+                </div>
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw -pdf-o fa-pencil-square-o"></i></a>
+                  <p class="text-xs-center">DXF</p>
+                </div>
+                <div class="card-block"></div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Climat 18</h4>
+                  <h6 class="card-subtitle text-muted">Stratigrafia</h6>
+                </div>
+                <img class="card-img-top img-fluid m-b-1" src="http://v4.pingendo.com/assets/photos/apple/photo-2.jpg" alt="Card image">
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw fa-file-pdf-o"></i></a>
+                  <p class="text-xs-center">PDF</p>
+                </div>
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw -pdf-o fa-pencil-square-o"></i></a>
+                  <p class="text-xs-center">DXF</p>
+                </div>
+                <div class="card-block"></div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Isolanti</h4>
+                  <h6 class="card-subtitle text-muted">Confronto</h6>
+                </div>
+                <img class="card-img-top img-fluid m-b-1" src="http://v4.pingendo.com/assets/photos/apple/photo-1.jpg" alt="Card image">
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw fa-file-pdf-o"></i></a>
+                  <p class="text-xs-center">PDF</p>
+                </div>
+                <div class="col-xs-6 col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN col-md-NaN">
+                  <a class="text-muted"><i class="-down -download -pdf-o fa fa-3x fa-fw -pdf-o fa-pencil-square-o"></i></a>
+                  <p class="text-xs-center">DXF</p>
+                </div>
+                <div class="card-block"></div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+
+            </div>
+
+          </div>
         </div>
-        <div class="section"><div class="container"><div class="row"><div class="col-md-12"><h1 class="display-1" draggable="true">Display</h1></div></div></div></div><script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/stickyfill/1.1.3/stickyfill.js"></script>
-        <script type="text/javascript">
-            $('.sticky').Stickyfill();
-        </script>
-    
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/stickyfill/1.1.3/stickyfill.js"></script>
+  <script type="text/javascript">
+    $('.sticky').Stickyfill();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body></html>
