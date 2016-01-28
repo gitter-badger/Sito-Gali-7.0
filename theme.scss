@@ -77,12 +77,6 @@ $font-size-xs:               .75rem !default;
 $headings-font-family:       inherit !default;
 
 
-$navbar-dark-color:                 red;
-$navbar-dark-hover-color:           rgba(255,255,255,.75) !default;
-$navbar-dark-active-color:          rgba(255,255,255,1) !default;
-$navbar-dark-disabled-color:        rgba(255,255,255,.25) !default;
-
-
 @import 'bootstrap';
 @import 'pingendo-bootstrap';
 
@@ -111,4 +105,10 @@ $navbar-dark-disabled-color:        rgba(255,255,255,.25) !default;
   border-radius: 10px 20px 30px 40px;
   border-style: solid;
   border-color: green;
+}
+
+
+
+.transparent {
+  
 }
