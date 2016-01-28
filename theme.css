@@ -4899,6 +4899,10 @@ a.text-danger:hover {
   border-style: solid;
   border-color: green; }
 
+.navbar-brand {
+  position: relative;
+  top: 25px; }
+
 .navbar.bg-inverse {
   background-color: rgba(241, 94, 40, 0.5);
   background-color: rgba(0, 0, 0, 0.5);
