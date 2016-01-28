@@ -108,6 +108,10 @@ $headings-font-family:       inherit !default;
 }
 
 
+.navbar-brand {
+	position:relative;
+  top: 25px;
+}
 
 .navbar.bg-inverse {
   background-color : rgba(241, 94, 40, 0.5);
