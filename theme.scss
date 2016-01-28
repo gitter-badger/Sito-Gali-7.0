@@ -109,6 +109,11 @@ $headings-font-family:       inherit !default;
 
 
 
-.transparent {
-  
+.navbar.bg-inverse {
+  background-color : rgba(241, 94, 40, 0.5);
+  background-color : rgba(0, 0, 0,0.5);
+
+  position: absolute;
+  z-index:1;
+  width:100%;
 }
