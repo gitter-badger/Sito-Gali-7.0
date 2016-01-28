@@ -1,4 +1,3 @@
-
 // Colors
 //
 // Grayscale and brand colors for use across Bootstrap.
@@ -78,6 +77,12 @@ $font-size-xs:               .75rem !default;
 $headings-font-family:       inherit !default;
 
 
+$navbar-dark-color:                 red;
+$navbar-dark-hover-color:           rgba(255,255,255,.75) !default;
+$navbar-dark-active-color:          rgba(255,255,255,1) !default;
+$navbar-dark-disabled-color:        rgba(255,255,255,.25) !default;
+
+
 @import 'bootstrap';
 @import 'pingendo-bootstrap';
 
@@ -86,7 +91,6 @@ $headings-font-family:       inherit !default;
 }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid green;
 }
 
@@ -98,4 +102,13 @@ $headings-font-family:       inherit !default;
 	position: -webkit-sticky;
   position: sticky;
   top: 0px;
+}
+
+.pippo {
+  background-color: rgba(255,0,0,0.1);
+  color: green;
+  border-bottom-width: 10px;
+  border-radius: 10px 20px 30px 40px;
+  border-style: solid;
+  border-color: green;
 }
