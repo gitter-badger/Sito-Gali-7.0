@@ -3130,7 +3130,7 @@ button.list-group-item-danger {
     color: white; }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5); }
+  color: red; }
   .navbar-dark .navbar-nav .nav-link:focus,
   .navbar-dark .navbar-nav .nav-link:hover {
     color: rgba(255, 255, 255, 0.75); }
@@ -4881,7 +4881,6 @@ a.text-danger:hover {
   object-position: center left !important; }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid green; }
 
 .section-fill-height {
@@ -4891,3 +4890,11 @@ a.text-danger:hover {
   position: -webkit-sticky;
   position: sticky;
   top: 0px; }
+
+.pippo {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: green;
+  border-bottom-width: 10px;
+  border-radius: 10px 20px 30px 40px;
+  border-style: solid;
+  border-color: green; }
