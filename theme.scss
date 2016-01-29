@@ -85,69 +85,24 @@ $headings-font-family : Lato;
   object-position : center left !important;
 }
 
-
 .section-fill-height     {
-
-
-
-
   max-height : 70%;
-
-
-
-
 }
 
 .sticky     {
-
-
-
-
 	position : -webkit-sticky;
-
-
-
-
   position : sticky;
-
-
-
-
   top : 0px;
-
-
-
-
 }
  
-.pippo     {
-
-  background-color : rgba(255,0,0,0.1);
-
-  color : green;
-
-  border-bottom-width : 10px;
-
-  border-radius : 10px 20px 30px 40px;
-
-  border-style : solid;
-
-  border-color : green;
-
-}
-
-
 .navbar     {
   border-bottom : 1px solid $brand-primary;
 }
 
 
 .navbar-brand     {
-
 	position : relative;
-
   top : 12px;
-
 }
 
 .navbar.bg-inverse     {
@@ -159,7 +114,5 @@ $headings-font-family : Lato;
 }
 
 .navbar .nav img     {
-
   height : 36px;
-
 }
