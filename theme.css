@@ -4888,14 +4888,6 @@ a.text-danger:hover {
   position: sticky;
   top: 0px; }
 
-.pippo {
-  background-color: rgba(255, 0, 0, 0.1);
-  color: green;
-  border-bottom-width: 10px;
-  border-radius: 10px 20px 30px 40px;
-  border-style: solid;
-  border-color: green; }
-
 .navbar {
   border-bottom: 1px solid #f15e28; }
 
