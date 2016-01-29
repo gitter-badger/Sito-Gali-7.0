@@ -3,17 +3,17 @@
 //
 // Grayscale and brand colors for use across Bootstrap.
 
-$gray-dark:                 #373a3c !default;
-$gray:                      #55595c !default;
-$gray-light:                #818a91 !default;
-$gray-lighter:              #eceeef !default;
-$gray-lightest:             #f7f7f9 !default;
+$gray-dark : #373a3c !default;
+$gray : #55595c !default;
+$gray-light : #818a91 !default;
+$gray-lighter : #eceeef !default;
+$gray-lightest : #f7f7f9 !default;
 
-$brand-primary:             #0275d8 !default;
-$brand-success:             #5cb85c !default;
-$brand-info:                #5bc0de !default;
-$brand-warning:             #f0ad4e !default;
-$brand-danger:              #d9534f !default;
+$brand-primary : #f15e28;
+$brand-success : #5cb85c !default;
+$brand-info : #5bc0de !default;
+$brand-warning : #CECFD9 !default;
+$brand-danger : #d9534f !default;
 
 
 // Options
@@ -44,69 +44,122 @@ $border-width : 1px !default;
 //
 // Settings for the `<body>` element.
 
-$body-bg:                    #fff !default;
-$body-color:                 #373a3c !default;
+$body-bg : #fff !default;
+$body-color : #373a3c !default;
 
 
 // Links
 //
 // Style anchor elements.
 
-$link-color:                 $brand-primary !default;
-$link-decoration:            none !default;
-$link-hover-color:           darken($link-color, 15%) !default;
-$link-hover-decoration:      underline !default;
+$link-color : $brand-primary !default;
+$link-decoration : none !default;
+$link-hover-color : darken($link-color, 15%) !default;
+$link-hover-decoration : underline !default;
 
 
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:     "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:          Georgia, "Times New Roman", Times, serif !default;
-$font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base:           $font-family-sans-serif !default;
+$font-family-sans-serif : "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif : Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace : Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base : Lato;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
-$font-size-root:             16px !default;
+$font-size-root : 15px !default;
 
-$font-size-base:             1rem !default;
-$font-size-lg:               1.25rem !default;
-$font-size-sm:               .875rem !default;
-$font-size-xs:               .75rem !default;
+$font-size-base : 1rem !default;
+$font-size-lg : 1.25rem !default;
+$font-size-sm : .875rem !default;
+$font-size-xs : .75rem !default;
 
-$headings-font-family:       inherit !default;
+$headings-font-family : Lato;
 
 
 @import 'bootstrap';
 @import 'pingendo-bootstrap';
 
-.section .background-video {
-  object-position: center left !important ;
+.section .background-video     {
+  object-position : center left !important;
 }
 
-.navbar {
-  background-color: black;
-  border-bottom: 1px solid grey;
+
+.section-fill-height     {
+
+
+
+
+  max-height : 70%;
+
+
+
+
 }
 
-.section-fill-height {
-  max-height: 70%;
+.sticky     {
+
+
+
+
+	position : -webkit-sticky;
+
+
+
+
+  position : sticky;
+
+
+
+
+  top : 0px;
+
+
+
+
 }
 
-.sticky {
-	position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
+.pippo     {
+
+  background-color : rgba(255,0,0,0.1);
+
+  color : green;
+
+  border-bottom-width : 10px;
+
+  border-radius : 10px 20px 30px 40px;
+
+  border-style : solid;
+
+  border-color : green;
+
 }
 
-img.grayscale {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
-  filter: gray; /* IE6-9 */
-  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+
+.navbar     {
+  border-bottom : 1px solid $brand-primary;
 }
 
-img.grayscale:hover {
-  filter: none;
-  -webkit-filter: grayscale(0%);
+
+.navbar-brand     {
+
+	position : relative;
+
+  top : 12px;
+
+}
+
+.navbar.bg-inverse     {
+  background-color : rgba(241, 94, 40, 0.5);
+  background-color : rgba(0, 0, 0,0.5);
+  position : absolute;
+  z-index : 1;
+  width : 100%;
+}
+
+.navbar .nav img     {
+
+  height : 36px;
+
 }
