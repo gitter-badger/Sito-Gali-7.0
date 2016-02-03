@@ -6,8 +6,11 @@
     
     var idList = null;
     // find the id list
+    var url = window.location.pathname;
+    var filename = url.substring(url.lastIndexOf('/')+1);
+
     $.each(data.lists, function( key, list ) {
-      if (list.name == document.location.pathname.substr(1)) {
+      if (list.name == filename) {
         idList = list.id;
         return false
       }
