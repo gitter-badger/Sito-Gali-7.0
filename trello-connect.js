@@ -60,20 +60,23 @@
       }
       // zoom
     });
+    
+    if (window.screen.width < 1140)
+      return;
+    
+    $model.parent().find("img").on("click", function() {
+      // clone, fix width and append
+      var $img = $("<img>");
+      var src = $(this).attr("src");
+      $img.attr("src", src);
+      $img.addClass("full-screen");
 
-     $model.parent().find("img").on("click", function() {
-        // clone, fix width and append
-        var $img = $("<img>");
-        var src = $(this).attr("src");
-        $img.attr("src", src);
-        $img.addClass("full-screen");
+      $img.one("click", function() {
+        $(this).remove();
+      });
 
-        $img.one("click", function() {
-          $(this).remove();
-        });
-
-        $("body").append($img);
-      }); 
+      $("body").append($img);
+    }); 
    
    $model.remove();
     
