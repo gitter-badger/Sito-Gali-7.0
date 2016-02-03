@@ -1,7 +1,7 @@
  $(window).on("ready", function() {
   
   // go to top
-  $("body").append('<a href="#myAnchor" class="go-top"><i class="fa fa-fw fa-angle-up"></i></a>');
+  $("body").append('<a href="#top" class="go-top"><i class="fa fa-fw fa-angle-up"></i></a>');
   $(window).scroll(function(event) {
     var scroll = $(window).scrollTop();
     if (scroll >= 150) {
@@ -83,21 +83,35 @@
     if (window.screen.width < 1140)
       return;
 
-    $model.parent().find("img").on("click", function() {
+
+    var zoomImage = function(img) {
       // clone, fix width and append
+      var index = $model.parent().find("img").index(img);
+      document.location.hash = "#" + index;
       var $img = $("<img>");
-      var src = $(this).attr("src");
-      $img.attr("src", src);
+      $img.attr("src", $(img).attr("src"));
       $img.addClass("full-screen");
 
       $img.one("click", function() {
         $(this).remove();
+        document.location.hash = "";
       });
 
       $("body").append($img);
-    }); 
+    }
+
+    $model.parent().find("img").on("click", function() {
+      zoomImage(this);
+    });
+
+
+    try {
+      var index = Number(document.location.hash.replace("#", ""));
+      zoomImage($model.parent().find("img")[index]);
+    } catch(e) {
+    }
    
-   $model.remove();
+   $model.hide();
     
   });
 
