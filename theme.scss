@@ -135,3 +135,20 @@ img.grayscale:hover {
   filter: none;
   -webkit-filter: grayscale(0%);
 }
+
+.full-screen {
+  position:fixed;
+  top:0px;
+  left:0px;
+  object-fit:cover;
+}
+
+.full-screen:hover {
+  cursor: pointer;
+}
+
+
+.trello img:hover {
+  cursor: pointer;
+}
+
