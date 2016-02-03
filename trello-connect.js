@@ -35,6 +35,7 @@
       var url = card.attachments[0].url.replace("https://trello-attachments.s3.amazonaws.com", "http://galimberti.imgix.net");
       url = url + "?w=" + resolution;
       $clone.find("img").attr("src", url);
+      $clone.find("img").attr("alt", card.name);
       $clone.appendTo($model.parent());
 
 
@@ -46,6 +47,7 @@
         var url = card.attachments[1].url.replace("https://trello-attachments.s3.amazonaws.com", "http://galimberti.imgix.net");
         url = url + "?w=" + resolution;
         $secondCol.find("img").attr("src", url);
+        $secondCol.find("img").attr("alt", card.name);
         $col.after($secondCol);
       }
 
