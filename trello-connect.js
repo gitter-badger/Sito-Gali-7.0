@@ -1,4 +1,23 @@
  $(window).on("ready", function() {
+  
+  // go to top
+  $("body").append('<a href="#myAnchor" class="go-top"><i class="fa fa-fw fa-angle-up"></i></a>');
+  $(window).scroll(function(event) {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 150) {
+      $(".go-top").addClass("show");
+    } else {
+      $(".go-top").removeClass("show");
+    }
+  });
+
+  $('.go-top').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 500);
+});
+
+
 
   $.getJSON( "./trello.json", function( data ) {
     console.log(data);
@@ -35,8 +54,8 @@
       var $clone = $model.clone();
       var url = card.attachments[0].url.replace("https://trello-attachments.s3.amazonaws.com", "http://galimberti.imgix.net");
       url = url + "?w=" + resolution;
-      url = url + "&mark=https://raw.githubusercontent.com/ggali/Sito-Gali-7.0/master/assets/icone/galimberti_watermark_white_small.png";
-      url = url + "&markw=100&markpad=10";
+      url = url + "&mark=https://raw.githubusercontent.com/ggali/Sito-Gali-7.0/master/assets/icone/galimberti_watermark_white.png";
+      url = url + "&markscale=10&markpad=10";
       $clone.find("img").attr("src", url);
       $clone.find("img").attr("alt", card.name);
       $clone.appendTo($model.parent());
@@ -49,12 +68,12 @@
         var $secondCol = $col.clone();
         var url = card.attachments[1].url.replace("https://trello-attachments.s3.amazonaws.com", "http://galimberti.imgix.net");
         url = url + "?w=" + resolution;
-        url = url + "&mark=https://raw.githubusercontent.com/ggali/Sito-Gali-7.0/master/assets/icone/galimberti_watermark_white_small.png";
-        url = url + "&markw=200&markpad=20";
+        url = url + "&mark=https://raw.githubusercontent.com/ggali/Sito-Gali-7.0/master/assets/icone/galimberti_watermark_white.png";
+        url = url + "&markscale=10&markpad=10";
         $secondCol.find("img").attr("src", url);
 
-        var firstUrl = $col.find("img").attr("src");
-        $col.find("img").attr("src", firstUrl + "&markw=200&markpad=20");
+        // var firstUrl = $col.find("img").attr("src");
+        // $col.find("img").attr("src", firstUrl);
         $secondCol.find("img").attr("alt", card.name);
         $col.after($secondCol);
       }
@@ -63,7 +82,7 @@
     
     if (window.screen.width < 1140)
       return;
-    
+
     $model.parent().find("img").on("click", function() {
       // clone, fix width and append
       var $img = $("<img>");

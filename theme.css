@@ -4939,3 +4939,32 @@ img.grayscale:hover {
 .trello img:hover {
   cursor: pointer;
 }
+
+
+.go-top {
+  display: block;
+  line-height: 30px;
+  text-align: center;
+  font-size: 20px;
+  position: fixed;
+  bottom: -40px;
+  right: 20px;
+  padding: 5px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #404040;
+  color: #FFFFFF;
+  text-decoration: none;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.go-top.show { bottom: 20px; }
+
+.go-top:hover {
+  background-color: #404040;
+  color: #FFFFFF;
+}
