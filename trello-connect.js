@@ -94,7 +94,7 @@
 
       $img.one("click", function() {
         $(this).remove();
-        document.location.hash = "";
+        window.history.pushState(null, "Title", "#");
       });
 
       $("body").append($img);
@@ -107,7 +107,8 @@
 
     try {
       var index = Number(document.location.hash.replace("#", ""));
-      zoomImage($model.parent().find("img")[index]);
+      if (index != 0)
+        zoomImage($model.parent().find("img")[index]);
     } catch(e) {
     }
    
