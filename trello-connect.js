@@ -1,3 +1,9 @@
+// Variabili di configurazione
+var markscale = 10;   // percentuale larghezza watermark rispetto all'immagine
+var markpad = 10;     // padding watermark
+var markurl = "https://raw.githubusercontent.com/ggali/Sito-Gali-7.0/master/assets/icone/galimberti_watermark_white.png";
+
+
  $(window).on("ready", function() {
   
   // go to top
@@ -54,8 +60,8 @@
       var $clone = $model.clone();
       var url = card.attachments[0].url.replace("https://trello-attachments.s3.amazonaws.com", "http://galimberti.imgix.net");
       url = url + "?w=" + resolution;
-      url = url + "&mark=https://raw.githubusercontent.com/ggali/Sito-Gali-7.0/master/assets/icone/galimberti_watermark_white.png";
-      url = url + "&markscale=10&markpad=10";
+      url = url + "&mark=" + markurl;
+      url = url + "&markscale=" + markscale + "&markpad=" + markpad;
       $clone.find("img").attr("src", url);
       $clone.find("img").attr("alt", card.name);
       $clone.appendTo($model.parent());
@@ -68,8 +74,8 @@
         var $secondCol = $col.clone();
         var url = card.attachments[1].url.replace("https://trello-attachments.s3.amazonaws.com", "http://galimberti.imgix.net");
         url = url + "?w=" + resolution;
-        url = url + "&mark=https://raw.githubusercontent.com/ggali/Sito-Gali-7.0/master/assets/icone/galimberti_watermark_white.png";
-        url = url + "&markscale=10&markpad=10";
+        url = url + "&mark=" + markurl;
+        url = url + "&markscale=" + markscale + "&markpad=" + markpad;
         $secondCol.find("img").attr("src", url);
 
         // var firstUrl = $col.find("img").attr("src");
