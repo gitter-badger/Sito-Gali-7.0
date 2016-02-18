@@ -1,10 +1,22 @@
+
 // Variabili di configurazione
 var markscale = 10;   // percentuale larghezza watermark rispetto all'immagine
 var markpad = 10;     // padding watermark
 var markurl = "https://raw.githubusercontent.com/ggali/Sito-Gali-7.0/master/assets/icone/galimberti_watermark_white.png";
 
 
- $(window).on("ready", function() {
+// jquery visible
+!function(t){var i=t(window);t.fn.visible=function(t,e,o){if(!(this.length<1)){var r=this.length>1?this.eq(0):this,n=r.get(0),f=i.width(),h=i.height(),o=o?o:"both",l=e===!0?n.offsetWidth*n.offsetHeight:!0;if("function"==typeof n.getBoundingClientRect){var g=n.getBoundingClientRect(),u=g.top>=0&&g.top<h,s=g.bottom>0&&g.bottom<=h,c=g.left>=0&&g.left<f,a=g.right>0&&g.right<=f,v=t?u||s:u&&s,b=t?c||a:c&&a;if("both"===o)return l&&v&&b;if("vertical"===o)return l&&v;if("horizontal"===o)return l&&b}else{var d=i.scrollTop(),p=d+h,w=i.scrollLeft(),m=w+f,y=r.offset(),z=y.top,B=z+r.height(),C=y.left,R=C+r.width(),j=t===!0?B:z,q=t===!0?z:B,H=t===!0?R:C,L=t===!0?C:R;if("both"===o)return!!l&&p>=q&&j>=d&&m>=L&&H>=w;if("vertical"===o)return!!l&&p>=q&&j>=d;if("horizontal"===o)return!!l&&m>=L&&H>=w}}}}(jQuery);
+
+// froogaloop
+var Froogaloop=function(){function e(a){return new e.fn.init(a)}function g(a,c,b){if(!b.contentWindow.postMessage)return!1;a=JSON.stringify({method:a,value:c});b.contentWindow.postMessage(a,h)}function l(a){var c,b;try{c=JSON.parse(a.data),b=c.event||c.method}catch(e){}"ready"!=b||k||(k=!0);if(!/^https?:\/\/player.vimeo.com/.test(a.origin))return!1;"*"===h&&(h=a.origin);a=c.value;var m=c.data,f=""===f?null:c.player_id;c=f?d[f][b]:d[b];b=[];if(!c)return!1;void 0!==a&&b.push(a);m&&b.push(m);f&&b.push(f);
+return 0<b.length?c.apply(null,b):c.call()}function n(a,c,b){b?(d[b]||(d[b]={}),d[b][a]=c):d[a]=c}var d={},k=!1,h="*";e.fn=e.prototype={element:null,init:function(a){"string"===typeof a&&(a=document.getElementById(a));this.element=a;return this},api:function(a,c){if(!this.element||!a)return!1;var b=this.element,d=""!==b.id?b.id:null,e=c&&c.constructor&&c.call&&c.apply?null:c,f=c&&c.constructor&&c.call&&c.apply?c:null;f&&n(a,f,d);g(a,e,b);return this},addEvent:function(a,c){if(!this.element)return!1;
+var b=this.element,d=""!==b.id?b.id:null;n(a,c,d);"ready"!=a?g("addEventListener",a,b):"ready"==a&&k&&c.call(null,d);return this},removeEvent:function(a){if(!this.element)return!1;var c=this.element,b=""!==c.id?c.id:null;a:{if(b&&d[b]){if(!d[b][a]){b=!1;break a}d[b][a]=null}else{if(!d[a]){b=!1;break a}d[a]=null}b=!0}"ready"!=a&&b&&g("removeEventListener",a,c)}};e.fn.init.prototype=e.fn;window.addEventListener?window.addEventListener("message",l,!1):window.attachEvent("onmessage",l);return window.Froogaloop=
+window.$f=e}();
+
+
+
+$(window).on("ready", function() {
   
   // go to top
   $("body").append('<a href="#top" class="go-top"><i class="fa fa-fw fa-angle-up"></i></a>');
@@ -21,9 +33,30 @@ var markurl = "https://raw.githubusercontent.com/ggali/Sito-Gali-7.0/master/asse
     $('html, body').animate({
       scrollTop: 0
     }, 500);
-});
+  });
 
 
+
+  // video autoplay autostop
+  var timeout = null;
+  $(window).scroll(function() {
+    if (timeout) 
+      clearTimeout(timeout);
+    
+    timeout = setTimeout(function() {
+      $('.trello iframe').each(function() {
+        if($(this).visible()) {
+          var player = $f(this);
+          player.play();
+        } else {
+          player.pause();
+        }
+      })
+    }, 250);
+  });
+
+
+  // load from trello
 
   $.getJSON( "./trello.json", function( data ) {
     console.log(data);
@@ -54,9 +87,23 @@ var markurl = "https://raw.githubusercontent.com/ggali/Sito-Gali-7.0/master/asse
     $.each(data.cards, function( key, card ) {
       if (card.idList != idList)
         return;
+      
       // we have a card
-      // find attachment
+      // check video
+      if (card.desc.indexOf("player.vimeo.com") > 0) {
+        var $clone = $model.clone();
+        var $embed = $('<div class="embed-responsive embed-responsive-16by9"></div>');
+        var $iframe = $('<iframe class="m-t-1"></iframe>');
+        $iframe.attr("src", card.desc);
+        $embed.append($iframe);
 
+        $clone.find("img").replaceWith($embed);
+        $clone.appendTo($model.parent());
+        
+        return;
+      }
+
+      // check img
       var $clone = $model.clone();
       var url = card.attachments[0].url.replace("https://trello-attachments.s3.amazonaws.com", "http://galimberti.imgix.net");
       url = url + "?w=" + resolution;
