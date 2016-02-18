@@ -191,49 +191,34 @@ img.grayscale   {
 }
 
 img.grayscale:hover   {
-
-
   filter : none;
-
-
   -webkit-filter : grayscale(0%);
+}
 
-
+.noscroll {
+  overflow: hidden;
 }
 
 .full-screen   {
-
-
+  z-index: 100000;
   position : fixed;
-
-
-  top : 0px;
-
-
+  top :  0px; 
   left : 0px;
-
-
-  object-fit : cover;
   width:100%;
+
+	background-color: white;
+  overflow-y: scroll;
   height: 100%;
-
-}
-
-.full-screen:hover   {
-
-
-  cursor : pointer;
-
-
+  
+  img { 
+    cursor: zoom-out;
+    width:100%;
+  }
 }
 
 
-.trello img:hover   {
-
-
-  cursor : pointer;
-
-
+.trello img  {
+  cursor : zoom-in;
 }
 
 

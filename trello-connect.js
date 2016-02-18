@@ -94,16 +94,23 @@ var markurl = "https://raw.githubusercontent.com/ggali/Sito-Gali-7.0/master/asse
       // clone, fix width and append
       var index = $model.parent().find("img").index(img);
       document.location.hash = "#" + index;
+
+      // create the wrapper and the full width image
+      var $wrapper = $("<div class='full-screen'></div>");
       var $img = $("<img>");
       $img.attr("src", $(img).attr("src"));
-      $img.addClass("full-screen");
+      $wrapper.append($img);
+      
+      // block the body scroll
+      $("body").addClass("noscroll");
+      $("body").append($wrapper);
 
       $img.one("click", function() {
-        $(this).remove();
-        window.history.pushState(null, "Title", "#");
+        // body back to scroll
+        $("body").removeClass("noscroll");
+        $wrapper.remove();
+        window.history.pushState(null, "", "#");
       });
-
-      $("body").append($img);
     }
 
     $model.parent().find("img").on("click", function() {
