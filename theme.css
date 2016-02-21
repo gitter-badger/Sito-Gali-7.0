@@ -4877,6 +4877,9 @@ a.text-danger:hover {
     width: 72.25rem;
     max-width: 72.25rem; } }
 
+html {
+  height: 100%; }
+
 .section .background-video {
   object-position: center left !important; }
 

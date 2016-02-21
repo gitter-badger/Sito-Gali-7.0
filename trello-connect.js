@@ -67,8 +67,11 @@ var markurl = "https://raw.githubusercontent.com/ggali/Sito-Gali-7.0/master/asse
 
             if(direction === 'both')
                 return !!clientSize && ((compareBottom <= viewBottom) && (compareTop >= viewTop)) && ((compareRight <= viewRight) && (compareLeft >= viewLeft));
-            else if(direction === 'vertical') 
-                return !!clientSize && ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+            else if(direction === 'vertical') {
+              console.log(compareTop ,viewTop);
+              console.log(compareBottom ,viewBottom);
+              return !!clientSize && ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+            }
             else if(direction === 'horizontal')
                 return !!clientSize && ((compareRight <= viewRight) && (compareLeft >= viewLeft));
         }

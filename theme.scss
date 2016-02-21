@@ -81,6 +81,11 @@ $headings-font-family : Lato;
 @import 'bootstrap';
 @import 'pingendo-bootstrap';
 
+
+html {
+  height: 100%;
+}
+
 .section .background-video       {
 
 
