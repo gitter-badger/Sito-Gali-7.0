@@ -9,7 +9,7 @@ $gray-light : #818a91 !default;
 $gray-lighter : #eceeef !default;
 $gray-lightest : #F0F0F0 !default;
 
-$brand-primary : #f47e43;
+$brand-primary : #f15e28;
 $brand-success : #5cb85c !default;
 $brand-info : #5bc0de;
 $brand-warning : #f0ad4e !default;
@@ -43,8 +43,8 @@ $border-width : 1px !default;
 // Body
 //
 // Settings for the `<body>` element.
-
-$body-bg : #fff;
+ 
+$body-bg :white;
 $body-color : #373a3c !default;
 
 
@@ -81,6 +81,11 @@ $headings-font-family : Lato;
 @import 'bootstrap';
 @import 'pingendo-bootstrap';
 
+
+html {
+  height: 100%;
+}
+
 .section .background-video       {
 
 
@@ -111,6 +116,15 @@ $headings-font-family : Lato;
 
 }
  
+.navbar       {
+
+
+  border-bottom : 1px solid $brand-primary;
+
+
+}
+
+
 .navbar-brand       {
 
 
@@ -125,7 +139,10 @@ $headings-font-family : Lato;
 .navbar.bg-inverse       {
 
 
-  background : linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  background-color : rgba(241, 94, 40, 0.8);
+
+
+  background-color : rgba(0, 0, 0,0.7);
 
 
   position : absolute;
@@ -147,7 +164,22 @@ $headings-font-family : Lato;
 
 }
 
+.navbar .sideborder       {
 
+
+  border-left : 1px solid $brand-primary;
+
+  
+}
+
+ .azienda 
+{
+
+
+  border : 1px solid $brand-primary;
+
+  
+}
 
 img.grayscale   {
 
@@ -164,49 +196,34 @@ img.grayscale   {
 }
 
 img.grayscale:hover   {
-
-
   filter : none;
-
-
   -webkit-filter : grayscale(0%);
+}
 
-
+.noscroll {
+  overflow: hidden;
 }
 
 .full-screen   {
-
-
+  z-index: 100000;
   position : fixed;
-
-
-  top : 0px;
-
-
+  top :  0px; 
   left : 0px;
-
-
-  object-fit : cover;
   width:100%;
+
+	background-color: white;
+  overflow-y: scroll;
   height: 100%;
-
-}
-
-.full-screen:hover   {
-
-
-  cursor : pointer;
-
-
+  
+  img { 
+    cursor: zoom-out;
+    width:100%;
+  }
 }
 
 
-.trello img:hover   {
-
-
-  cursor : pointer;
-
-
+.trello img  {
+  cursor : zoom-in;
 }
 
 
