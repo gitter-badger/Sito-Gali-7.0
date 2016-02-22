@@ -16,7 +16,7 @@ $gray-light : #818a91 !default;
 $gray-lighter : #eceeef !default;
 $gray-lightest : #F0F0F0 !default;
  
-$brand-primary : #f15e28;
+$brand-primary : #f47e43;
 $brand-success : #5cb85c !default;
 $brand-info : #5bc0de;
 $brand-warning : #f0ad4e !default;
@@ -104,7 +104,7 @@ html {
 .section-fill-height       {
 
 
-  max-height : 70%;
+  max-height : 75%;
 
 
 }
@@ -123,14 +123,6 @@ html {
 
 }
  
-.navbar       {
-
-
-  border-bottom : 1px solid $brand-primary;
-
-
-}
-
 
 .navbar-brand       {
 
@@ -146,10 +138,7 @@ html {
 .navbar.bg-inverse       {
 
 
-  background-color : rgba(241, 94, 40, 0.8);
-
-
-  background-color : rgba(0, 0, 0,0.7);
+  background : linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
 
 
   position : absolute;
@@ -171,22 +160,6 @@ html {
 
 }
 
-.navbar .sideborder       {
-
-
-  border-left : 1px solid $brand-primary;
-
-  
-}
-
- .azienda 
-{
-
-
-  border : 1px solid $brand-primary;
-
-  
-}
 
 img.grayscale   {
 
