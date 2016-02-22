@@ -1738,7 +1738,7 @@ input[type="checkbox"].disabled {
       max-width: 940px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 980px; } }
 
 .container-fluid {
   margin-left: auto;
@@ -4890,7 +4890,7 @@ html {
   object-position: center left !important; }
 
 .section-fill-height {
-  max-height: 80%; }
+  max-height: 70%; }
 
 .sticky {
   position: -webkit-sticky;
