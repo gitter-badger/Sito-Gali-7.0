@@ -1,4 +1,11 @@
 
+@font-face {
+  font-family: 'Proxima';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Proxima'), url('ProximaNova-Regular.otf') format('truetype');
+}
+
 // Colors
 //
 // Grayscale and brand colors for use across Bootstrap
@@ -65,7 +72,7 @@ $link-hover-decoration : underline !default;
 $font-family-sans-serif : "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif : Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace : Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base : Lato;
+$font-family-base : Proxima;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root : 16px !default;

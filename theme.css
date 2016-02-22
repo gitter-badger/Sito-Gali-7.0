@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Proxima';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Proxima"), url("ProximaNova-Regular.otf") format("truetype"); }
+
 .alert {
   padding: 15px;
   margin-bottom: 1rem;
@@ -3457,7 +3463,7 @@ th {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: Lato;
+  font-family: Proxima;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -3800,7 +3806,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: Lato;
+  font-family: Proxima;
   font-size: 1rem;
   line-height: 1.5;
   color: #373a3c;
@@ -4122,7 +4128,7 @@ output {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: Lato;
+  font-family: Proxima;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
