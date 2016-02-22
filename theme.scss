@@ -104,11 +104,8 @@ html {
 }
 
 .section .background-video       {
-
-
+  
   object-position : center left !important;
-
-
 }
 
 .section-fill-height       {
@@ -133,14 +130,6 @@ html {
 
 }
  
-.navbar       {
-
-
-  border-bottom : 1px solid $brand-primary;
-
-
-}
-
 
 .navbar-brand       {
 
@@ -156,10 +145,7 @@ html {
 .navbar.bg-inverse       {
 
 
-  background-color : rgba(241, 94, 40, 0.8);
-
-
-  background-color : rgba(0, 0, 0,0.7);
+  background : linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
 
 
   position : absolute;
@@ -181,22 +167,6 @@ html {
 
 }
 
-.navbar .sideborder       {
-
-
-  border-left : 1px solid $brand-primary;
-
-  
-}
-
- .azienda 
-{
-
-
-  border : 1px solid $brand-primary;
-
-  
-}
 
 img.grayscale   {
 
