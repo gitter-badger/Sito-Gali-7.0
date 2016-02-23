@@ -4,7 +4,24 @@
   font-style: normal;
   font-weight: normal;
   src: local('Proxima'), url('ProximaNova-Regular.otf') format('truetype');
+} 
+
+@font-face {
+  font-family: 'Proxima';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Proxima'), url('ProximaNova-Bold.otf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Proxima';
+  font-style: normal;
+  font-weight: light;
+  src: local('Proxima'), url('ProximaNova-Light.otf') format('truetype');
+}
+
+
+
 
 // Colors
 //
