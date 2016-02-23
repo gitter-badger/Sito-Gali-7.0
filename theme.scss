@@ -110,11 +110,19 @@ $container-max-widths: (
   sm: 576px,
   md: 720px,
   lg: 940px,
-  xl: 980px
+  xl: 1500px
 ) !default;
+
+
 
 @import 'bootstrap';
 @import 'pingendo-bootstrap';
+
+
+body > * {
+  max-width: 1700px;
+  margin:auto;
+}
 
 
 html {
