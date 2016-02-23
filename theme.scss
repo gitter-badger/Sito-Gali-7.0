@@ -288,3 +288,34 @@ img.grayscale:hover   {
   background-color: #373a3c;
   
 }
+
+.card.pickgradient {
+  background: linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
+}
+
+.contatti {
+  
+  position: relative;
+  z-index:-1;
+  }
+
+.nome_contatti {
+  
+  position: absolute;
+  left: 20px;
+  width: 100%;
+  bottom: 70px;
+  color: white;
+  
+  
+}
+
+.ruolo_contatti   {
+  
+  position: absolute;
+  left: 20px;
+  width: 100%;
+  bottom: 35px;
+  color: white;
+    
+}
