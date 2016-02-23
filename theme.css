@@ -4901,6 +4901,10 @@ a.text-danger:hover {
     width: 72.25rem;
     max-width: 72.25rem; } }
 
+html {
+  height: 100%;
+  font-weight: light !important; }
+
 body > * {
   max-width: 1700px;
   margin: auto; }
@@ -4908,12 +4912,11 @@ body > * {
 .display-1, .display-2, .display-3, .display-4 {
   font-weight: 100 !important; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100 !important; }
+
 #photos .container {
   max-width: 940px; }
-
-html {
-  height: 100%;
-  font-weight: light !important; }
 
 .section .background-video {
   object-position: center left !important; }
