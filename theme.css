@@ -4909,10 +4909,10 @@ body > * {
   max-width: 1700px;
   margin: auto; }
 
-.display-1, .display-2, .display-3, .display-4 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 100 !important; }
 
-h1, h2, h3, h4, h5, h6 {
+.display-1, .display-2, .display-3, .display-4 {
   font-weight: 100 !important; }
 
 #photos .container {

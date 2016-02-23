@@ -135,14 +135,16 @@ body > * {
   margin:auto;
 }
 
+h1,h2,h3,h4,h5,h6 {
+   font-weight: 100 !important;
+}
+
 .display-1, .display-2, .display-3, .display-4 {
   font-weight: 100 !important;
 }
 
 
-h1,h2,h3,h4,h5,h6 {
-   font-weight: 100 !important;
-}
+
 
 #photos .container {
   max-width:940px;
