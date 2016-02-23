@@ -299,7 +299,17 @@ img.grayscale:hover   {
   z-index:-1;
   }
 
-.nome_contatti {
+#persone .card {
+
+  .card-block {
+		position: absolute;
+    z-index:100;
+    bottom: 0px;
+    color: white;
+  }
+}
+
+/*.nome_contatti {
   
   position: absolute;
   left: 20px;
@@ -318,4 +328,4 @@ img.grayscale:hover   {
   bottom: 35px;
   color: white;
     
-}
+}*/
