@@ -222,12 +222,11 @@ $(window).on("ready", function() {
 
       // create the wrapper and the full width image
       var $wrapper = $("<div class='full-screen'>\
-                          <ul class='list-unstyled m-t-1 m-x-1'>\
-                            <li class='list-inline-item'>Immagine " + index + "</li>\
-                            <li class='list-inline-item pull-right m-r-2'><i class='text-muted fa fa-close'></i></li>\
-                            <li class='list-inline-item m-l-2'><i class=' fa fa-envelope'></i></li>\
-                            <li class='list-inline-item m-l-1'><i class='fa fa-facebook'></i></li>\
-                          </ul>\
+                          <div class='btn-group m-t-1 m-x-1  pull-xs-right'>\
+                            <a class='btn btn-primary '>Immagine " + index + "</a>\
+                            <a class='btn btn-primary fa fa-envelope'></a>\
+                            <a class='btn btn-primary fa fa-facebook'></a>\
+                          </div>\
                         </div>");
       var $img = $("<img>");
       $img.attr("src", $(img).attr("src"));
