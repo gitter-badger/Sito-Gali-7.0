@@ -20,6 +20,13 @@
   src: url('ProximaNova-Light.otf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Proxima';
+  font-style: normal;
+  font-weight: 100;
+  src: url('ProximaNova-Thin.ttf') format('truetype');
+}
+
 
 
 
@@ -124,6 +131,9 @@ body > * {
   margin:auto;
 }
 
+.display-1, .display-2, .display-3, .display-4 {
+  font-weight: 100 !important;
+}
 
 #photos .container {
   max-width:940px;
