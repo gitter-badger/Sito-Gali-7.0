@@ -20,6 +20,13 @@
   src: url('ProximaNova-Light.otf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Proxima';
+  font-style: normal;
+  font-weight: 100;
+  src: url('ProximaNova-Thin.ttf') format('truetype');
+}
+
 
 
 
@@ -118,21 +125,32 @@ $container-max-widths: (
 @import 'bootstrap';
 @import 'pingendo-bootstrap';
 
+html {
+  height: 100%;
+  font-weight: light !important;
+}
 
 body > * {
   max-width: 1700px;
   margin:auto;
 }
 
+h1,h2,h3,h4,h5,h6 {
+   font-weight: 100 !important;
+}
+
+.display-1, .display-2, .display-3, .display-4 {
+  font-weight: 100 !important;
+}
+
+
+
 
 #photos .container {
   max-width:940px;
 }
 
-html {
-  height: 100%;
-  font-weight: light !important;
-}
+
 
 .section .background-video       {
   object-position : center left !important;

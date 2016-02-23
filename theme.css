@@ -16,6 +16,12 @@
   font-weight: light;
   src: url("ProximaNova-Light.otf") format("truetype"); }
 
+@font-face {
+  font-family: 'Proxima';
+  font-style: normal;
+  font-weight: 100;
+  src: url("ProximaNova-Thin.ttf") format("truetype"); }
+
 .alert {
   padding: 15px;
   margin-bottom: 1rem;
@@ -4895,16 +4901,22 @@ a.text-danger:hover {
     width: 72.25rem;
     max-width: 72.25rem; } }
 
+html {
+  height: 100%;
+  font-weight: light !important; }
+
 body > * {
   max-width: 1700px;
   margin: auto; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100 !important; }
+
+.display-1, .display-2, .display-3, .display-4 {
+  font-weight: 100 !important; }
+
 #photos .container {
   max-width: 940px; }
-
-html {
-  height: 100%;
-  font-weight: light !important; }
 
 .section .background-video {
   object-position: center left !important; }
