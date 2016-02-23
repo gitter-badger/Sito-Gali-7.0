@@ -4978,16 +4978,29 @@ img.grayscale:hover {
   position: relative;
   z-index: -1; }
 
-.nome_contatti {
+#persone .card .card-block {
+  position: absolute;
+  z-index: 100;
+  bottom: 0px;
+  color: white; }
+
+/*.nome_contatti {
+  
   position: absolute;
   left: 20px;
   width: 100%;
   bottom: 70px;
-  color: white; }
+  color: white;
+  
+  
+}
 
-.ruolo_contatti {
+.ruolo_contatti   {
+  
   position: absolute;
   left: 20px;
   width: 100%;
   bottom: 35px;
-  color: white; }
+  color: white;
+    
+}*/
