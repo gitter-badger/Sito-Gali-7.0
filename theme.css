@@ -4899,6 +4899,9 @@ body > * {
   max-width: 1700px;
   margin: auto; }
 
+#photos .container {
+  max-width: 940px; }
+
 html {
   height: 100%; }
 
