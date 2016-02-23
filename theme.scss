@@ -110,12 +110,24 @@ $container-max-widths: (
   sm: 576px,
   md: 720px,
   lg: 940px,
-  xl: 980px
+  xl: 1240px 
 ) !default;
+
+
 
 @import 'bootstrap';
 @import 'pingendo-bootstrap';
 
+
+body > * {
+  max-width: 1700px;
+  margin:auto;
+}
+
+
+#photos .container {
+  max-width:940px;
+}
 
 html {
   height: 100%;
@@ -123,11 +135,7 @@ html {
 }
 
 .section .background-video       {
-
-
   object-position : center left !important;
-
-
 }
 
 .section-fill-height       {
