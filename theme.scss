@@ -35,7 +35,7 @@ $gray-lightest : #F0F0F0 !default;
  
 $brand-primary : #f47e43;
 $brand-success : #5cb85c !default;
-$brand-info : #bbb;
+$brand-info : $gray;
 $brand-warning : #f0ad4e !default;
 $brand-danger : #d9534f !default;
 
@@ -119,7 +119,8 @@ $container-max-widths : (
 @import 'pingendo-bootstrap';
 
 
-body > *    {
+body > *     {
+
 
 
 
@@ -127,14 +128,17 @@ body > *    {
 
 
 
+
   margin : auto;
+
 
 
 
 }
 
 
-#photos .container    {
+#photos .container     {
+
 
 
 
@@ -142,9 +146,11 @@ body > *    {
 
 
 
+
 }
 
-html    {
+html     {
+
 
 
 
@@ -152,13 +158,16 @@ html    {
 
 
 
+
   font-weight : light !important;
+
 
 
 
 }
 
-.section .background-video          {
+.section .background-video           {
+
 
 
 
@@ -166,9 +175,11 @@ html    {
 
 
 
+
 }
 
-.section-fill-height          {
+.section-fill-height           {
+
 
 
 
@@ -180,9 +191,11 @@ html    {
 
 
 
+
 }
 
-.sticky          {
+.sticky           {
+
 
 
 
@@ -194,7 +207,9 @@ html    {
 
 
 
+
   position : sticky;
+
 
 
 
@@ -206,10 +221,12 @@ html    {
 
 
 
+
 }
  
 
-.navbar-brand          {
+.navbar-brand           {
+
 
 
 
@@ -221,7 +238,9 @@ html    {
 
 
 
+
   top : 12px;
+
 
 
 
@@ -229,7 +248,8 @@ html    {
 
 }
 
-.navbar.bg-inverse          {
+.navbar.bg-inverse           {
+
 
 
 
@@ -241,7 +261,9 @@ html    {
 
 
 
+
   position : absolute;
+
 
 
 
@@ -253,7 +275,9 @@ html    {
 
 
 
+
   width : 100%;
+
 
 
 
@@ -261,7 +285,8 @@ html    {
 
 }
 
-.navbar .nav img          {
+.navbar .nav img           {
+
 
 
 
@@ -273,10 +298,12 @@ html    {
 
 
 
+
 }
 
 
-img.grayscale      {
+img.grayscale       {
+
 
 
 
@@ -287,8 +314,10 @@ img.grayscale      {
 
 
 
+
  /* Firefox 3.5+ */
   filter : gray;
+
 
 
 
@@ -299,10 +328,12 @@ img.grayscale      {
 
 
 
+
  /* Chrome 19+ & Safari 6+ */
 }
 
-img.grayscale:hover      {
+img.grayscale:hover       {
+
 
 
 
@@ -310,13 +341,16 @@ img.grayscale:hover      {
 
 
 
+
   -webkit-filter : grayscale(0%);
+
 
 
 
 }
 
-.noscroll    {
+.noscroll     {
+
 
 
 
@@ -324,9 +358,11 @@ img.grayscale:hover      {
 
 
 
+
 }
 
-.full-screen      {
+.full-screen       {
+
 
 
 
@@ -334,11 +370,14 @@ img.grayscale:hover      {
 
 
 
+
   position : fixed;
 
 
 
+
   top : 0px;
+
 
 
  
@@ -346,7 +385,9 @@ img.grayscale:hover      {
 
 
 
+
   width : 100%;
+
 
 
 
@@ -354,11 +395,14 @@ img.grayscale:hover      {
 
 
 
+
   overflow-y : scroll;
 
 
 
+
   height : 100%;
+
 
 
 
@@ -379,7 +423,8 @@ img.grayscale:hover      {
 }
 
 
-.trello img     {
+.trello img      {
+
 
 
 
@@ -387,11 +432,13 @@ img.grayscale:hover      {
 
 
 
+
 }
 
 
 
-.go-top      {
+.go-top       {
+
 
 
 
@@ -399,7 +446,9 @@ img.grayscale:hover      {
 
 
 
+
   line-height : 30px;
+
 
 
 
@@ -407,7 +456,9 @@ img.grayscale:hover      {
 
 
 
+
   font-size : 20px;
+
 
 
 
@@ -415,7 +466,9 @@ img.grayscale:hover      {
 
 
 
+
   bottom : -40px;
+
 
 
 
@@ -423,7 +476,9 @@ img.grayscale:hover      {
 
 
 
+
   padding : 5px;
+
 
 
 
@@ -431,7 +486,9 @@ img.grayscale:hover      {
 
 
 
+
   -moz-transition : all 0.5s ease;
+
 
 
 
@@ -439,7 +496,9 @@ img.grayscale:hover      {
 
 
 
+
   transition : all 0.5s ease;
+
 
 
 
@@ -447,7 +506,9 @@ img.grayscale:hover      {
 
 
 
+
   color : #FFFFFF;
+
 
 
 
@@ -455,7 +516,9 @@ img.grayscale:hover      {
 
 
 
+
   -moz-border-radius : 2px;
+
 
 
 
@@ -463,13 +526,16 @@ img.grayscale:hover      {
 
 
 
+
   border-radius : 2px;
+
 
 
 
 }
 
-.go-top.show      {
+.go-top.show       {
+
 
 
 
@@ -477,9 +543,11 @@ img.grayscale:hover      {
 
 
 
+
 }
 
-.go-top:hover, .go-top:focus      {
+.go-top:hover, .go-top:focus       {
+
 
 
 
@@ -487,13 +555,16 @@ img.grayscale:hover      {
 
 
 
+
   color : #FFFFFF;
+
 
 
 
 }
 
-.gray    {
+.gray     {
+
 
 
 
@@ -501,13 +572,16 @@ img.grayscale:hover      {
 
 
 
+
   color : white;
+
 
 
 
 }
 
-.card.pickgradient    {
+.card.pickgradient     {
+
 
 
 
@@ -515,9 +589,11 @@ img.grayscale:hover      {
 
 
 
+
 }
 
-.contatti    {
+.contatti     {
+
 
 
 
@@ -526,13 +602,16 @@ img.grayscale:hover      {
 
 
 
+
   z-index : -1;
+
 
 
 
   }
 
-#persone .card    {
+#persone .card     {
+
 
 
 
