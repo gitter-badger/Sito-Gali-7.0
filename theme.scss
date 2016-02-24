@@ -319,3 +319,15 @@ img.grayscale:hover       {
     width:100%;
   }
 }
+
+.modal-content {
+  background-color: $gray-dark;
+  
+  .lead {
+    line-height: 200%
+  }  
+}
+
+.modal-header img {
+    height: 25px;
+  }
