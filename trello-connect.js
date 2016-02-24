@@ -255,12 +255,8 @@ $(window).on("ready", function() {
         FB.ui(
         {
           method: 'feed',
-          name: 'This is the content of the "name" field.',
-          link: 'http://www.galimberti.eu',
+          link: document.location,
           picture: $(img).attr("src"),
-          caption: 'Caption like which appear as title of the dialog box',
-          description: 'Small description of the post',
-          message: ''
         }
       );
 
