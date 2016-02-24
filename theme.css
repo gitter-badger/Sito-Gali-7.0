@@ -4905,6 +4905,9 @@ html {
   height: 100%;
   font-weight: light !important; }
 
+.lead {
+  font-weight: normal; }
+
 body > * {
   max-width: 1700px;
   margin: auto; }
@@ -4922,7 +4925,7 @@ h1, h2, h3, h4, h5, h6 {
   object-position: center left !important; }
 
 .section-fill-height {
-  max-height: 75%; }
+  max-height: 80%; }
 
 .sticky {
   position: -webkit-sticky;
@@ -5016,3 +5019,12 @@ img.grayscale:hover {
   z-index: 100;
   bottom: -20px;
   color: white; }
+
+.modal-content {
+  background-color: #373a3c; }
+
+.modal-title img {
+  height: 25px; }
+
+.modal-body p {
+  line-height: 200%; }
