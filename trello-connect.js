@@ -223,15 +223,31 @@ $(window).on("ready", function() {
       // create the wrapper and the full width image
       var $wrapper = $("<div class='full-screen'>\
                           <div class='btn-group m-t-1 m-x-1  pull-xs-right'>\
-                            <a class='btn btn-primary '>Immagine " + index + "</a>\
-                            <a class='btn btn-primary fa fa-envelope'></a>\
-                            <a class='btn btn-primary fa fa-facebook'></a>\
+                            <a class='btn btn-info '>Immagine " + index + "</a>\
+                            <div class='btn-group'>\
+                              <button class='btn btn-info fa fa-chain' data-toggle='dropdown'></button>\
+                              <div class='dropdown-menu dropdown-menu-right p-a-1'>\
+                                <input type='text' size='50' value='"+ document.location +"'>\
+                              </div>\
+                            </div>\
+                            <a class='btn btn-info fa fa-envelope' href='mailto:?body=" + document.location + "'></a>\
+                            <a class='btn btn-info fa fa-facebook'></a>\
                           </div>\
                         </div>");
+      
       var $img = $("<img>");
       $img.attr("src", $(img).attr("src"));
       $wrapper.append($img);
       
+      $wrapper.find(".fa-facebook").on("click", function() {
+        var url = "http://www.facebook.com/share.php?u=" + document.location;
+        window.open(url, "", "height=200,width=200,top=100px,menubar=no");
+      });
+
+      $wrapper.find(".fa-chain").on("click", function() {
+          var input = $wrapper.find("input")[0];
+          input.setSelectionRange(0, input.value.length);
+      })
       // block the body scroll
       $("body").addClass("noscroll");
       $("body").append($wrapper);
