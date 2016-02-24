@@ -251,12 +251,12 @@ $(window).on("ready", function() {
       $wrapper.append($img);
       
       $wrapper.find(".fa-facebook").on("click", function() {
-        alert("34  jjk");
+        alert("5  jjk");
         FB.ui(
         {
           method: 'feed',
           name: 'Galimberti SRL - Legno e Bioedilizia',
-          link: document.location,
+          link: "0",
           picture: $(img).attr("src"),
           caption: '1',
           description: '2',
