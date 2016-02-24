@@ -10,7 +10,7 @@
   font-family: 'Proxima';
   font-style: normal;
   font-weight: bold;
-  src: url('ProximaNova-Bold.otf') format('truetype');
+  src: url('ProximaNova-Semibold.otf') format('truetype');
 }
 
 @font-face {
@@ -18,6 +18,13 @@
   font-style: normal;
   font-weight: light;
   src: url('ProximaNova-Light.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Proxima';
+  font-style: normal;
+  font-weight: 100;
+  src: url('ProximaNova-Thin.ttf') format('truetype');
 }
 
 
