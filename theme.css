@@ -1754,7 +1754,7 @@ input[type="checkbox"].disabled {
   @media (min-width: 992px) {
     .container {
       max-width: 940px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1480px) {
     .container {
       max-width: 1400px; } }
 
@@ -2244,7 +2244,7 @@ input[type="checkbox"].disabled {
   .col-lg-offset-11 {
     margin-left: 91.66667%; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1480px) {
   .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
     float: left; }
   .col-xl-1 {
@@ -4439,7 +4439,7 @@ a.bg-danger:hover {
   .pull-lg-none {
     float: none !important; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1480px) {
   .pull-xl-left {
     float: left !important; }
   .pull-xl-right {
@@ -4705,7 +4705,7 @@ a.bg-danger:hover {
   .text-lg-center {
     text-align: center !important; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1480px) {
   .text-xl-left {
     text-align: left !important; }
   .text-xl-right {
@@ -4806,11 +4806,11 @@ a.text-danger:hover {
   .hidden-lg-up {
     display: none !important; } }
 
-@media (max-width: 1199px) {
+@media (max-width: 1479px) {
   .hidden-lg-down {
     display: none !important; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1480px) {
   .hidden-xl-up {
     display: none !important; } }
 
@@ -4917,9 +4917,10 @@ h1, h2, h3, h4, h5, h6 {
 html {
   background-color: #aaa; }
 
-body > * {
+body {
   max-width: 1700px;
-  margin: auto; }
+  margin: auto;
+  position: relative; }
 
 .section .background-video {
   object-position: center left !important; }
