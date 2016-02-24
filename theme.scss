@@ -144,6 +144,18 @@ html {
   font-weight: light !important;
 }
 
+<<<<<<< HEAD
+=======
+.lead {
+  font-weight: normal;
+}
+
+body > * {
+  max-width: 1700px;
+  margin:auto;
+}
+
+>>>>>>> master
 h1,h2,h3,h4,h5,h6 {
    font-weight: 100 !important;
 }
@@ -153,12 +165,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-
-
 #photos .container {
   max-width:940px;
 }
 
+<<<<<<< HEAD
 html {
   background-color: #b8c1c3;
 }
@@ -169,63 +180,42 @@ body {
   position:relative;
 }
 
+=======
+>>>>>>> master
 .section .background-video       {
   object-position : center left !important;
 }
 
+<<<<<<< HEAD
 .section-fill-height  {
   max-height : 75%;
+=======
+.section-fill-height       {
+  max-height : 80%;
+>>>>>>> master
 }
 
 .sticky       {
-
-
-	position : -webkit-sticky;
-
-
+  position : -webkit-sticky;
   position : sticky;
-
-
   top : 0px;
-
-
 }
  
 
 .navbar-brand       {
-
-
-	position : relative;
-
-
+  position : relative;
   top : 20px;
-
-
 }
 
 .navbar.bg-inverse       {
-
-
   background : linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-
-
   position : absolute;
-
-
   z-index : 1;
-
-
   width : 100%;
-
-
 }
 
 .navbar .nav img       {
-
-
   height : 50px;
-
-
 }
 
 
@@ -327,4 +317,16 @@ img.grayscale:hover   {
     bottom: -20px;
     color: white;
   }
+}
+
+.modal-content {
+  background-color: #373a3c;
+}
+
+.modal-title img {
+  height: 25px;
+}
+
+.modal-body p {
+  line-height: 200%;
 }
