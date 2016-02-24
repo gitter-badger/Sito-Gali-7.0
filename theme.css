@@ -5044,3 +5044,11 @@ img.grayscale:hover {
   .full-screen img {
     cursor: zoom-out;
     width: 100%; }
+
+.modal-content {
+  background-color: #373a3c; }
+  .modal-content .lead {
+    line-height: 200%; }
+
+.modal-header img {
+  height: 25px; }
