@@ -4925,7 +4925,7 @@ h1, h2, h3, h4, h5, h6 {
   object-position: center left !important; }
 
 .section-fill-height {
-  max-height: 85%; }
+  max-height: 80%; }
 
 .sticky {
   position: -webkit-sticky;
@@ -5022,3 +5022,6 @@ img.grayscale:hover {
 
 .modal-content {
   background-color: #373a3c; }
+
+.modal-title img {
+  height: 25px; }
