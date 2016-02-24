@@ -256,7 +256,7 @@ $(window).on("ready", function() {
         {
           method: 'feed',
           name: 'This is the content of the "name" field.',
-          link: 'URL which you would like to share ',
+          link: 'http://www.galimberti.eu',
           picture: $(img).attr("src"),
           caption: 'Caption like which appear as title of the dialog box',
           description: 'Small description of the post',
