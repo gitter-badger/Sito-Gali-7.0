@@ -130,11 +130,6 @@ html {
   font-weight: light !important;
 }
 
-body > * {
-  max-width: 1700px;
-  margin:auto;
-}
-
 h1,h2,h3,h4,h5,h6 {
    font-weight: 100 !important;
 }
@@ -156,12 +151,8 @@ h1,h2,h3,h4,h5,h6 {
   object-position : center left !important;
 }
 
-.section-fill-height       {
-
-
+.section-fill-height  {
   max-height : 75%;
-
-
 }
 
 .sticky       {
