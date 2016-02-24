@@ -240,7 +240,7 @@ $(window).on("ready", function() {
       $wrapper.append($img);
       
       $wrapper.find(".fa-facebook").on("click", function() {
-        var url = "http://www.facebook.com/share.php?u=" + document.location;
+        var url = "http://www.facebook.com/share.php?u=" + $(img).attr("src") + "&title=Galimberti.eu - www.galimberti.eu";
         window.open(url, "", "height=200,width=200,top=100px,menubar=no");
       });
 
