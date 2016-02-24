@@ -1756,7 +1756,7 @@ input[type="checkbox"].disabled {
       max-width: 940px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1240px; } }
+      max-width: 1400px; } }
 
 .container-fluid {
   margin-left: auto;
