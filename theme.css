@@ -4914,6 +4914,13 @@ h1, h2, h3, h4, h5, h6 {
 #photos .container {
   max-width: 940px; }
 
+html {
+  background-color: #aaa; }
+
+body > * {
+  max-width: 1700px;
+  margin: auto; }
+
 .section .background-video {
   object-position: center left !important; }
 
