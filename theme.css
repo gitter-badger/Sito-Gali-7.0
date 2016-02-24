@@ -4912,7 +4912,7 @@ html {
   object-position: center left !important; }
 
 .section-fill-height {
-  max-height: 75%; }
+  max-height: 85%; }
 
 .sticky {
   position: -webkit-sticky;
@@ -4921,7 +4921,7 @@ html {
 
 .navbar-brand {
   position: relative;
-  top: 12px; }
+  top: 0px; }
 
 .navbar.bg-inverse {
   background: linear-gradient(rgba(0, 0, 0, 0.7), transparent);
@@ -4997,9 +4997,6 @@ img.grayscale:hover {
   background-color: #373a3c;
   color: white; }
 
-.contatti {
-  position: relative; }
-
 #persone .card {
   overflow: hidden; }
   #persone .card .card-block {
@@ -5047,3 +5044,11 @@ img.grayscale:hover {
   .full-screen img {
     cursor: zoom-out;
     width: 100%; }
+
+.modal-content {
+  background-color: #373a3c; }
+  .modal-content .lead {
+    line-height: 200%; }
+
+.modal-header img {
+  height: 25px; }
