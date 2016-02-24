@@ -1753,7 +1753,7 @@ input[type="checkbox"].disabled {
       max-width: 720px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 940px; } }
+      max-width: 950px; } }
   @media (min-width: 1480px) {
     .container {
       max-width: 1400px; } }
@@ -4915,7 +4915,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 940px; }
 
 html {
-  background-color: #aaa; }
+  background-color: #b8c1c3; }
 
 body {
   max-width: 1700px;
