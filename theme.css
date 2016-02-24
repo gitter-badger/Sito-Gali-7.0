@@ -5019,3 +5019,6 @@ img.grayscale:hover {
   z-index: 100;
   bottom: -20px;
   color: white; }
+
+.modal-content {
+  background-color: #373a3c; }
