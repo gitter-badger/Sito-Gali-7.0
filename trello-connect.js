@@ -251,7 +251,7 @@ $(window).on("ready", function() {
       $wrapper.append($img);
       
       $wrapper.find(".fa-facebook").on("click", function() {
-        alert("3jjk");
+        alert("3 jjk");
         FB.ui(
         {
           method: 'feed',
