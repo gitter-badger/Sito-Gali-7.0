@@ -167,8 +167,8 @@ $(window).on("ready", function() {
       return;
 
     var resolution = window.screen.width;
-    if (resolution > 1140) 
-      resolution = 1140;
+    if (resolution > 940) 
+      resolution = 940;
 
     var $model = $(".trello");
 
@@ -222,7 +222,7 @@ $(window).on("ready", function() {
       // zoom
     });
     
-    if (window.screen.width < 1140)
+    if (window.screen.width < 940)
       return;
 
 
