@@ -113,13 +113,27 @@ $headings-font-family : Proxima;
 //
 // Define the maximum width of `.container` for different screen sizes.
 
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 544px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1480px
+) !default;
+
+
 $container-max-widths: (
   sm: 576px,
   md: 720px,
-  lg: 940px,
-  xl: 1240px 
+  lg: 950px,
+  xl: 1400px 
 ) !default;
-
+ 
 
 
 @import 'bootstrap';
@@ -130,6 +144,8 @@ html {
   font-weight: light !important;
 }
 
+<<<<<<< HEAD
+=======
 .lead {
   font-weight: normal;
 }
@@ -139,6 +155,7 @@ body > * {
   margin:auto;
 }
 
+>>>>>>> master
 h1,h2,h3,h4,h5,h6 {
    font-weight: 100 !important;
 }
@@ -152,12 +169,30 @@ h1,h2,h3,h4,h5,h6 {
   max-width:940px;
 }
 
+<<<<<<< HEAD
+html {
+  background-color: #b8c1c3;
+}
+
+body {
+	max-width: 1700px;
+  margin:auto;
+  position:relative;
+}
+
+=======
+>>>>>>> master
 .section .background-video       {
   object-position : center left !important;
 }
 
+<<<<<<< HEAD
+.section-fill-height  {
+  max-height : 75%;
+=======
 .section-fill-height       {
   max-height : 80%;
+>>>>>>> master
 }
 
 .sticky       {

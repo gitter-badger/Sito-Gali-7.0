@@ -1753,10 +1753,10 @@ input[type="checkbox"].disabled {
       max-width: 720px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 940px; } }
-  @media (min-width: 1200px) {
+      max-width: 950px; } }
+  @media (min-width: 1480px) {
     .container {
-      max-width: 1240px; } }
+      max-width: 1400px; } }
 
 .container-fluid {
   margin-left: auto;
@@ -2244,7 +2244,7 @@ input[type="checkbox"].disabled {
   .col-lg-offset-11 {
     margin-left: 91.66667%; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1480px) {
   .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
     float: left; }
   .col-xl-1 {
@@ -4439,7 +4439,7 @@ a.bg-danger:hover {
   .pull-lg-none {
     float: none !important; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1480px) {
   .pull-xl-left {
     float: left !important; }
   .pull-xl-right {
@@ -4705,7 +4705,7 @@ a.bg-danger:hover {
   .text-lg-center {
     text-align: center !important; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1480px) {
   .text-xl-left {
     text-align: left !important; }
   .text-xl-right {
@@ -4806,11 +4806,11 @@ a.text-danger:hover {
   .hidden-lg-up {
     display: none !important; } }
 
-@media (max-width: 1199px) {
+@media (max-width: 1479px) {
   .hidden-lg-down {
     display: none !important; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1480px) {
   .hidden-xl-up {
     display: none !important; } }
 
@@ -4905,13 +4905,6 @@ html {
   height: 100%;
   font-weight: light !important; }
 
-.lead {
-  font-weight: normal; }
-
-body > * {
-  max-width: 1700px;
-  margin: auto; }
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: 100 !important; }
 
@@ -4921,11 +4914,19 @@ h1, h2, h3, h4, h5, h6 {
 #photos .container {
   max-width: 940px; }
 
+html {
+  background-color: #b8c1c3; }
+
+body {
+  max-width: 1700px;
+  margin: auto;
+  position: relative; }
+
 .section .background-video {
   object-position: center left !important; }
 
 .section-fill-height {
-  max-height: 80%; }
+  max-height: 75%; }
 
 .sticky {
   position: -webkit-sticky;
@@ -5019,12 +5020,3 @@ img.grayscale:hover {
   z-index: 100;
   bottom: -20px;
   color: white; }
-
-.modal-content {
-  background-color: #373a3c; }
-
-.modal-title img {
-  height: 25px; }
-
-.modal-body p {
-  line-height: 200%; }
