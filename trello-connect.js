@@ -251,16 +251,16 @@ $(window).on("ready", function() {
       $wrapper.append($img);
       
       $wrapper.find(".fa-facebook").on("click", function() {
-        alert("5  jjk");
+        alert("jjk");
         FB.ui(
         {
           method: 'feed',
-          name: 'Galimberti SRL - Legno e Bioedilizia',
-          link: "0",
+          name: 'Galimberti - Legno e Bioedilizia',
+          link: document.location.href,
           picture: $(img).attr("src"),
-          caption: '1',
-          description: '2',
-          message: '3'
+          caption: 'www.galimberti.eu',
+          description: 'Progettiamo e fabbrichiamo costruzioni, coperture, facciate e pavimenti in legno e materiali naturali.',
+          message: ''
         }
       );
 
