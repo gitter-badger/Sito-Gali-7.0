@@ -89,6 +89,17 @@ window.$f=e}();
 
 
 $(window).on("ready", function() {
+
+
+  $.ajaxSetup({ cache: true });
+  $.getScript('//connect.facebook.net/en_US/sdk.js', function() {
+    FB.init({
+      appId: '532070683628144',
+      version: 'v2.5' // or v2.0, v2.1, v2.2, v2.3
+    });
+    // $('#loginbutton,#feedbutton').removeAttr('disabled');
+    // FB.getLoginStatus(updateStatusCallback);
+  });
   
   // go to top
   $("body").append('<a href="#top" class="go-top"><i class="fa fa-fw fa-angle-up"></i></a>');
@@ -221,11 +232,46 @@ $(window).on("ready", function() {
       document.location.hash = "#" + index;
 
       // create the wrapper and the full width image
-      var $wrapper = $("<div class='full-screen'></div>");
+      var $wrapper = $("<div class='full-screen'>\
+                          <div class='btn-group m-t-1 m-x-1  pull-xs-right'>\
+                            <a class='btn btn-info '>Immagine " + index + "</a>\
+                            <div class='btn-group'>\
+                              <button class='btn btn-info fa fa-chain' data-toggle='dropdown'></button>\
+                              <div class='dropdown-menu dropdown-menu-right p-a-1'>\
+                                <input type='text' size='50' value='"+ document.location +"'>\
+                              </div>\
+                            </div>\
+                            <a class='btn btn-info fa fa-envelope' href='mailto:?body=" + document.location + "'></a>\
+                            <a class='btn btn-info fa fa-facebook'></a>\
+                          </div>\
+                        </div>");
+      
       var $img = $("<img>");
       $img.attr("src", $(img).attr("src"));
       $wrapper.append($img);
       
+      $wrapper.find(".fa-facebook").on("click", function() {
+        alert("jjk");
+        FB.ui(
+        {
+          method: 'feed',
+          name: 'Galimberti - Legno e Bioedilizia',
+          link: document.location.href,
+          picture: $(img).attr("src"),
+          caption: 'www.galimberti.eu',
+          description: 'Progettiamo e fabbrichiamo costruzioni, coperture, facciate e pavimenti in legno e materiali naturali.',
+          message: ''
+        }
+      );
+
+        // var url = "http://www.facebook.com/sharer/sharer.php?p[summary]=Galimberti&p[url]=" + encodeURI($(img).attr("src")) ;
+        // window.open(url, "", "height=500,width=500,top=100px,menubar=no");
+      });
+
+      $wrapper.find(".fa-chain").on("click", function() {
+          var input = $wrapper.find("input")[0];
+          input.setSelectionRange(0, input.value.length);
+      })
       // block the body scroll
       $("body").addClass("noscroll");
       $("body").append($wrapper);
