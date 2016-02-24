@@ -258,9 +258,9 @@ $(window).on("ready", function() {
           name: 'Galimberti SRL - Legno e Bioedilizia',
           link: document.location,
           picture: $(img).attr("src"),
-          caption: '',
-          description: '',
-          message: ''
+          caption: '1',
+          description: '2',
+          message: '3'
         }
       );
 
