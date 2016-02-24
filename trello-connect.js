@@ -89,6 +89,17 @@ window.$f=e}();
 
 
 $(window).on("ready", function() {
+
+
+  $.ajaxSetup({ cache: true });
+  $.getScript('//connect.facebook.net/en_US/sdk.js', function() {
+    FB.init({
+      appId: '532070683628144',
+      version: 'v2.5' // or v2.0, v2.1, v2.2, v2.3
+    });
+    // $('#loginbutton,#feedbutton').removeAttr('disabled');
+    // FB.getLoginStatus(updateStatusCallback);
+  });
   
   // go to top
   $("body").append('<a href="#top" class="go-top"><i class="fa fa-fw fa-angle-up"></i></a>');
@@ -240,8 +251,20 @@ $(window).on("ready", function() {
       $wrapper.append($img);
       
       $wrapper.find(".fa-facebook").on("click", function() {
-        var url = "http://www.facebook.com/share.php?u=" + $(img).attr("src") + "&title=Galimberti.eu - www.galimberti.eu";
-        window.open(url, "", "height=200,width=200,top=100px,menubar=no");
+        FB.ui(
+        {
+          method: 'feed',
+          name: 'This is the content of the "name" field.',
+          link: 'URL which you would like to share ',
+          picture: $(img).attr("src"),
+          caption: 'Caption like which appear as title of the dialog box',
+          description: 'Small description of the post',
+          message: ''
+        }
+      );
+
+        // var url = "http://www.facebook.com/sharer/sharer.php?p[summary]=Galimberti&p[url]=" + encodeURI($(img).attr("src")) ;
+        // window.open(url, "", "height=500,width=500,top=100px,menubar=no");
       });
 
       $wrapper.find(".fa-chain").on("click", function() {
