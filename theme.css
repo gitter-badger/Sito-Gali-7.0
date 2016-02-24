@@ -4925,7 +4925,7 @@ h1, h2, h3, h4, h5, h6 {
   object-position: center left !important; }
 
 .section-fill-height {
-  max-height: 10%; }
+  max-height: 90%; }
 
 .sticky {
   position: -webkit-sticky;
