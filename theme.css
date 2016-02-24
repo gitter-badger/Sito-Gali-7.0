@@ -4997,18 +4997,18 @@ img.grayscale:hover {
   background-color: #373a3c;
   color: white; }
 
-.card.pickgradient {
-  background: linear-gradient(transparent 50%, black 100%); }
-
 .contatti {
-  position: relative;
-  z-index: -1; }
+  position: relative; }
 
-#persone .card .card-block {
-  position: absolute;
-  z-index: 100;
-  bottom: -20px;
-  color: white; }
+#persone .card {
+  overflow: hidden; }
+  #persone .card .card-block {
+    position: absolute;
+    z-index: 100;
+    bottom: -20px;
+    color: white;
+    width: 100%;
+    background: linear-gradient(transparent 0%, black 70%); }
 
 .full-screen {
   z-index: 100000;
