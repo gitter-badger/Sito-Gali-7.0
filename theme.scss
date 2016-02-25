@@ -155,6 +155,12 @@ h1, h2, h3, h4, h5, h6 {
   object-position : center left !important;
 }
 
+.section-fill-height .carousel-item img {
+  object-position : center left !important;
+  object-fit: cover;
+  width: 100%;
+	height : 100%;
+}
 .section-fill-height           {
   max-height : 80%;
 }
