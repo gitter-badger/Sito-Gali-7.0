@@ -4918,7 +4918,7 @@ html {
   object-position: center left !important; }
 
 .section-fill-height {
-  max-height: 85%; }
+  max-height: 80%; }
 
 .sticky {
   position: -webkit-sticky;
@@ -5020,3 +5020,8 @@ img.grayscale:hover {
 
 .modal-header img {
   height: 25px; }
+
+hr.light {
+  height: 1px;
+  background-color: gray;
+  border: none; }
