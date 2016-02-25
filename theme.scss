@@ -253,7 +253,7 @@ img.grayscale:hover       {
 }
 
 .gray     {
-  background-color : #373a3c;
+  background-color : $gray-dark;
   color : white;
 }
 
@@ -264,9 +264,9 @@ img.grayscale:hover       {
 		position: absolute;
     z-index:100;
     bottom: -20px;
-    color: white;
     width: 100%;
-  background : linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,1) 70%);
+    color: white;
+    background : linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,1) 70%);
 
   }
 }
