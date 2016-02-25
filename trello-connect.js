@@ -234,7 +234,7 @@ $(window).on("ready", function() {
       // create the wrapper and the full width image
       var $wrapper = $("<div class='full-screen'>\
                           <div class='btn-group m-t-1 m-x-1  pull-xs-right'>\
-                            <a class='btn btn-info '>Immagine " + index + "</a>\
+                            <label class='btn btn-info' style='pointer-events:none'>Immagine " + index + "</label>\
                             <div class='btn-group'>\
                               <button class='btn btn-info fa fa-chain' data-toggle='dropdown'></button>\
                               <div class='dropdown-menu dropdown-menu-right p-a-1'>\
