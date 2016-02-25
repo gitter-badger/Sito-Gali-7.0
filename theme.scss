@@ -140,7 +140,15 @@ body {
 html     {
   height : 100%;
   background-color: #b8c1c3;
-  font-weight : light !important;
+  font-weight : normal !important;
+}
+
+.lead {
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
 }
 
 .section .background-video           {
