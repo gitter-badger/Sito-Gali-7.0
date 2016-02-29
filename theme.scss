@@ -210,17 +210,21 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .navbar {
-  a:active {
+  a {
+    color: white !important;
+  }
+  .active {
     border-bottom: 3px solid $brand-primary;
   }
-    
+
+  &.bg-inverse           {
+    position : absolute;
+    z-index : 1;
+    width : 100%;
+    background : transparent;
+	}
 }
-.navbar.bg-inverse           {
-  position : absolute;
-  z-index : 1;
-  width : 100%;
-  background : transparent;
-}
+
 
 .navbar .nav img           {
   height : 36px;
