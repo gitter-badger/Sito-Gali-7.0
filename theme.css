@@ -5062,7 +5062,7 @@ img.grayscale:hover {
 
 .modal-content {
   background-color: #373a3c; }
-  .modal-content .lead {
+  .modal-content p {
     line-height: 200%; }
 
 .modal-header img {
