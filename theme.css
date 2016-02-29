@@ -4905,6 +4905,9 @@ body {
   max-width: 1700px;
   margin: auto;
   position: relative; }
+  @media (max-width: 767px) {
+    body .section {
+      min-height: 600px; } }
 
 #photos .container {
   max-width: 940px; }
