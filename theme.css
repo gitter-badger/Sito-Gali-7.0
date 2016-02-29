@@ -4970,6 +4970,9 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   top: 0px; }
 
+.navbar a:active {
+  border-bottom: 3px solid #f47e43; }
+
 .navbar.bg-inverse {
   position: absolute;
   z-index: 1;
