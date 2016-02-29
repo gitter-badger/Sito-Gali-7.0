@@ -4907,7 +4907,8 @@ body {
   position: relative; }
   @media (max-width: 767px) {
     body .section {
-      min-height: 600px; } }
+      min-height: 600px;
+      max-height: 600px; } }
 
 #photos .container {
   max-width: 940px; }
