@@ -757,7 +757,7 @@ fieldset[disabled] a.btn {
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.75rem;
-  font-size: 0.75rem;
+  font-size: 0.5rem;
   line-height: 1.5;
   border-radius: 0.2rem; }
 
@@ -1434,7 +1434,7 @@ pre {
 .dropdown-header {
   display: block;
   padding: 3px 20px;
-  font-size: 0.75rem;
+  font-size: 0.5rem;
   line-height: 1.5;
   color: #818a91;
   white-space: nowrap; }
@@ -1512,7 +1512,7 @@ pre {
   .input-group-sm input[type="datetime-local"].form-control,
   input[type="month"].input-sm,
   .input-group-sm input[type="month"].form-control {
-    line-height: 1.675rem; }
+    line-height: 1.3rem; }
   input[type="date"].input-lg,
   .input-group-lg input[type="date"].form-control,
   input[type="time"].input-lg,
@@ -1542,7 +1542,7 @@ pre {
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
   padding: 0.275rem 0.75rem;
-  font-size: 0.75rem;
+  font-size: 0.5rem;
   line-height: 1.5;
   border-radius: 0.2rem; }
 
@@ -2425,7 +2425,7 @@ input[type="checkbox"].disabled {
   .input-group-addon.form-control-sm, .input-group-sm > .input-group-addon,
   .input-group-sm > .input-group-btn > .input-group-addon.btn {
     padding: 0.275rem 0.75rem;
-    font-size: 0.75rem;
+    font-size: 0.5rem;
     border-radius: 0.2rem; }
   .input-group-addon.form-control-lg, .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.btn {
@@ -3462,7 +3462,7 @@ th {
 
 .pagination-sm .page-link {
   padding: 0.275rem 0.75rem;
-  font-size: 0.75rem;
+  font-size: 0.5rem;
   line-height: 1.5; }
 
 .pagination-sm .page-item:first-child .page-link {
@@ -3496,7 +3496,7 @@ th {
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
-  font-size: 0.75rem;
+  font-size: 0.5rem;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -4161,7 +4161,7 @@ output {
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
-  font-size: 0.75rem;
+  font-size: 0.5rem;
   opacity: 0; }
   .tooltip.in {
     opacity: 0.9; }
