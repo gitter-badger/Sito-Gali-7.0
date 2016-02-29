@@ -39,7 +39,7 @@ $gray : #55595c !default;
 $gray-light : #818a91 !default;
 $gray-lighter : #eceeef !default;
 $gray-lightest : #F0F0F0 !default;
- 
+
 $brand-primary : #f47e43;
 $brand-success : #5cb85c !default;
 $brand-info : $gray;
@@ -74,7 +74,7 @@ $border-width : 1px !default;
 // Body
 //
 // Settings for the `<body>` element.
- 
+
 $body-bg : white;
 $body-color : #373a3c !default;
 
@@ -103,8 +103,9 @@ $font-size-root : 16px !default;
 
 $font-size-base : 1rem !default;
 $font-size-lg : 1.25rem !default;
-$font-size-sm : .875rem !default;
-$font-size-xs : .75rem !default;
+
+$font-size-sm : .5rem !default;
+$font-size-xs : .1rem !default;
 
 $headings-font-family : Proxima;
 
@@ -114,10 +115,10 @@ $headings-font-family : Proxima;
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths : (
-  sm: 576px,
-  md: 720px,
-  lg: 940px,
-  xl: 1240px 
+sm: 576px,
+md: 720px,
+lg: 940px,
+xl: 1240px 
 ) !default;
 
 
@@ -130,6 +131,22 @@ body {
   max-width: 1700px;
   margin:auto;
   position:relative;
+
+  @include media-breakpoint-down(sm) {
+    .section-fill-height {
+      min-height: 600px;
+      max-height: 600px;
+      display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox; /* TWEENER - IE 10 */
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-flex-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+    }
+  }
 }
 
 
@@ -151,6 +168,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
 }
 
+.section .background-image {
+  z-index: 0;
+}
 .section .background-video           {
   object-position : center left !important;
 }
@@ -169,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
   object-position : center left !important;
   object-fit: cover;
   width: 100%;
-	height : 100%;
+  height : 100%;
 }
 .section-fill-height           {
   max-height : 80%;
@@ -177,23 +197,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sticky           {
-	position : -webkit-sticky;
+  position : -webkit-sticky;
   position : sticky;
   top : 0px;
 }
- 
+
 
 .navbar-brand           {
-	position : relative;
+  position : relative;
   top : 0px;
 }
 
-.navbar.bg-inverse           {
-  position : absolute;
-  z-index : 1;
-  width : 100%;
-  background : transparent;
+
+.navbar {
+  a {
+    color: white !important;
+  }
+  .active {
+    border-bottom: 3px solid $brand-primary;
+  }
+
+  &.bg-inverse           {
+    position : absolute;
+    z-index : 1;
+    width : 100%;
+    background : transparent;
+	}
 }
+
 
 .navbar .nav img           {
   height : 36px;
@@ -244,7 +275,7 @@ img.grayscale:hover       {
 }
 
 .go-top.show       {
- bottom : 20px;
+  bottom : 20px;
 }
 
 .go-top:hover, .go-top:focus       {
@@ -261,7 +292,7 @@ img.grayscale:hover       {
   overflow: hidden;
 
   .card-block {
-		position: absolute;
+    position: absolute;
     z-index:100;
     bottom: -20px;
     width: 100%;
@@ -280,7 +311,7 @@ img.grayscale:hover       {
   top : 0px;
   left : 0px;
   width : 100%;
-	background-color : white;
+  background-color : white;
   overflow-y : scroll;
   height : 100%;
 
@@ -289,11 +320,11 @@ img.grayscale:hover       {
     top: 10px; 
     right: 1px;
   }
-  
+
   .dropdown-menu-right {
     right: -90px;
-	}
-  
+  }
+
   img { 
     cursor: zoom-out;
     width:100%;
@@ -302,18 +333,18 @@ img.grayscale:hover       {
 
 .modal-content {
   background-color: $gray-dark;
-  
+
   .lead {
     line-height: 200%
   }  
 }
 
 .modal-header img {
-    height: 25px;
-  }
+  height: 25px;
+}
 
 hr.light {
   height: 1px;
-background-color: gray;
-border: none;
+  background-color: gray;
+  border: none;
 }

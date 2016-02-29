@@ -90,6 +90,11 @@ window.$f=e}();
 
 $(window).on("ready", function() {
 
+  // highlight dell'attivo nella navbar
+  $(".navbar [href]").each(function() {
+    if (this.href == window.location.href)
+      $(this).addClass("active");
+  });
 
   $.ajaxSetup({ cache: true });
   $.getScript('//connect.facebook.net/en_US/sdk.js', function() {
