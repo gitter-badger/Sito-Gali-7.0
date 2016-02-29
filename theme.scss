@@ -135,6 +135,7 @@ body {
   @include media-breakpoint-down(sm) {
 		.section {
       min-height: 600px;
+            max-height: 600px;
     }
   }
 }
