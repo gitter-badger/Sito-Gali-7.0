@@ -4920,6 +4920,9 @@ html {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 100; }
 
+.section .background-image {
+  z-index: 1; }
+
 .section .background-video {
   object-position: center left !important; }
 
