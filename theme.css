@@ -5061,7 +5061,7 @@ img.grayscale:hover {
     width: 100%; }
 
 .modal-lg {
-  width: 50%; }
+  max-width: 500px; }
 
 .modal-content {
   background-color: #373a3c; }
