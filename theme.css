@@ -5032,7 +5032,10 @@ img.grayscale:hover {
   color: white; }
 
 #persone .card {
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer;
+  padding-top: 18px;
+  border-color: transparent; }
   #persone .card .card-block {
     position: absolute;
     z-index: 100;
@@ -5059,6 +5062,9 @@ img.grayscale:hover {
   .full-screen img {
     cursor: zoom-out;
     width: 100%; }
+
+.modal-lg {
+  max-width: 500px; }
 
 .modal-content {
   background-color: #373a3c; }

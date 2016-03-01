@@ -290,6 +290,9 @@ img.grayscale:hover       {
 
 #persone .card     {
   overflow: hidden;
+  cursor:pointer;
+  padding-top:18px;
+  border-color: transparent;
 
   .card-block {
     position: absolute;
@@ -298,8 +301,7 @@ img.grayscale:hover       {
     width: 100%;
     color: white;
     background : linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,1) 70%);
-
-  }
+   }
 }
 
 
@@ -329,6 +331,10 @@ img.grayscale:hover       {
     cursor: zoom-out;
     width:100%;
   }
+}
+
+.modal-lg {
+ max-width: 500px;
 }
 
 .modal-content {
