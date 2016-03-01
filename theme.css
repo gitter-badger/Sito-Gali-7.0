@@ -5039,7 +5039,8 @@ img.grayscale:hover {
     bottom: -20px;
     width: 100%;
     color: white;
-    background: linear-gradient(transparent 0%, black 70%); }
+    background: linear-gradient(transparent 0%, black 70%);
+    cursor: po; }
 
 .full-screen {
   z-index: 100000;
