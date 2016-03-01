@@ -5034,7 +5034,8 @@ img.grayscale:hover {
 #persone .card {
   overflow: hidden;
   cursor: pointer;
-  padding-top: 18px; }
+  padding-top: 18px;
+  border-color: transparent; }
   #persone .card .card-block {
     position: absolute;
     z-index: 100;
