@@ -5060,6 +5060,9 @@ img.grayscale:hover {
     cursor: zoom-out;
     width: 100%; }
 
+.modal-lg {
+  width: 90%; }
+
 .modal-content {
   background-color: #373a3c; }
   .modal-content p {
