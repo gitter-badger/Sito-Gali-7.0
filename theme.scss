@@ -223,6 +223,10 @@ h1, h2, h3, h4, h5, h6 {
     width : 100%;
     background : transparent;
 	}
+  
+  &.bg-dark {
+  background: $gray-dark
+  }
 }
 
 
