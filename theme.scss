@@ -210,13 +210,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .navbar {
-  a {
-    color: white !important;
-  }
-  .active {
-    border-bottom: 3px solid $brand-primary;
-  }
-
   &.bg-inverse           {
     position : absolute;
     z-index : 1;
@@ -230,8 +223,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.navbar .nav img           {
+.navbar .nav {
+  a {
+      color: white !important;
+    }
+    .active {
+      border-bottom: 3px solid $brand-primary;
+    }
+ 
+	img {
   height : 36px;
+	}
 }
 
 
