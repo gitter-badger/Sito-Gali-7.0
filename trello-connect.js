@@ -285,6 +285,7 @@ $(window).on("ready", function() {
       
       var $img = $("<img>");
       $img.attr("src", $(img).attr("src"));
+      $img.css("pointer-events", "none");
       $wrapper.append($img);
       
       $wrapper.find(".fa-facebook").on("click", function() {
@@ -312,7 +313,7 @@ $(window).on("ready", function() {
       $("body").addClass("noscroll");
       $("body").append($wrapper);
 
-      $img.one("click", function() {
+      $wrapper.one("click", function() {
         // body back to scroll
         $("body").removeClass("noscroll");
         $wrapper.remove();

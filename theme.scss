@@ -317,10 +317,11 @@ img.grayscale:hover       {
   top : 0px;
   left : 0px;
   width : 100%;
-  background-color : white;
+  background-color : black;
   overflow-y : scroll;
   height : 100%;
-
+  cursor: zoom-out;
+	
   > .btn-group {
     position: fixed;
     top: 10px; 
@@ -332,7 +333,7 @@ img.grayscale:hover       {
   }
 
   img { 
-    cursor: zoom-out;
+   pointer-events:none;
     width:100%;
   }
 }
