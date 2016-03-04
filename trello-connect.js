@@ -248,8 +248,8 @@ $(window).on("ready", function() {
       $btnLoadMore.hide();
 
     // show load more button if we have more the img/page limit
-    if (window.screen.width < 940)
-      return;
+    // if (window.screen.width < 940)
+    //   return;
 
 
     var zoomImage = function(img) {
