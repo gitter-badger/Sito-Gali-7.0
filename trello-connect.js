@@ -96,6 +96,17 @@ $(window).on("ready", function() {
       $(this).addClass("active");
   });
 
+  // optimize background img in header
+  var w = window.screen.width;
+  var s = $(".section-fill-height .background-image").attr("style");
+  $(".section-fill-height .background-image").attr("style", s.replace("')", "?w=" + w + "')") );
+
+  // optimize carousel img in header
+  var s = $(".section-fill-height .carousel-item img").each(function() {
+    var src = $(this).attr("src");
+    $(this).attr("src", src + "?w=" + w);
+  });
+
   $.ajaxSetup({ cache: true });
   $.getScript('//connect.facebook.net/en_US/sdk.js', function() {
     FB.init({
