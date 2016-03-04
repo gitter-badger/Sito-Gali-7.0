@@ -97,7 +97,8 @@ $(window).on("ready", function() {
   });
 
   // optimize background img in header
-  var w = window.screen.width;
+  var w = Math.max(window.screen.width, window.screen.height);
+
   var s = $(".section-fill-height .background-image").attr("style");
   $(".section-fill-height .background-image").attr("style", s.replace("')", "?w=" + w + "')") );
 
@@ -182,7 +183,7 @@ $(window).on("ready", function() {
     if (!idList)
       return;
 
-    var resolution = window.screen.width;
+    var resolution = Math.max(window.screen.width, window.screen.height);
     if (resolution > 940) 
       resolution = 940;
 
