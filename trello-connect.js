@@ -162,11 +162,39 @@ $(window).on("ready", function() {
   });
 
 
+  var buildPersone = function(data) {
+    var $section = $("#persone");
+    if ($section.length < 1)
+      return;
+
+    var idList;
+    $.each(data.lists, function( key, list ) {
+      if (list.name == "PERSONE") {
+        idList = list.id;
+        return false
+      }
+    });
+
+    if (!idList)
+      return;
+
+    var $model = $section.find(".trello");
+    
+    $.each(data.cards, function( key, card ) {
+      if (card.idList != idList)
+        return;
+      var $copy = $model.clone();
+      $model.after($copy);
+    });
+
+
+  }
+
   // load from trello
 
   $.getJSON( "./trello.json", function( data ) {
-    console.log(data);
     var items = [];
+    buildPersone(data);
     
     var idList = null;
     // find the id list
