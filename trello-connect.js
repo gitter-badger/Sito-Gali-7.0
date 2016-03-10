@@ -183,11 +183,25 @@ $(window).on("ready", function() {
     $.each(data.cards, function( key, card ) {
       if (card.idList != idList)
         return;
+
+      console.log(card);
       var $copy = $model.clone();
       var parts = card.desc.split("\n");
+      $copy.find("img").attr("src", card.attachments[0].url);
       $copy.find(".nome_contatti").text(card.name);
       $copy.find(".ruolo_contatti").text(parts[0]);
+      $copy.find(".card").attr("data-target" , "#" + card.id);
+
       $model.after($copy);
+
+      // make a new modal
+      var $modal = $("body").find($model.find(".card").attr("data-target"));
+      var $modalCopy = $modal.clone();
+      $modalCopy.attr("id", card.id);
+      $modalCopy.find(".nome_contatti").text(card.name);
+      $modal.after($modalCopy);
+
+
     });
 
 
