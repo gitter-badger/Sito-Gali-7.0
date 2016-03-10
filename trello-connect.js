@@ -184,6 +184,9 @@ $(window).on("ready", function() {
       if (card.idList != idList)
         return;
       var $copy = $model.clone();
+      var parts = card.desc.split("\n");
+      $copy.find(".nome_contatti").text(card.name);
+      $copy.find(".ruolo_contatti").text(parts[0]);
       $model.after($copy);
     });
 
