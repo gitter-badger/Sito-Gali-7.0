@@ -179,7 +179,7 @@ $(window).on("ready", function() {
       return;
 
     var $model = $section.find(".trello");
-    $model.hide();
+    // $model.hide();
     
     var extractPhoneNumber = function(val) {
       var i = val.indexOf("+");
