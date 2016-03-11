@@ -195,7 +195,7 @@ $(window).on("ready", function() {
         console.log(card);
         var $copy = $model.clone();
         var parts = card.desc.split("\n");
-        $copy.find("img").attr("src", card.attachments[0].url);
+        $copy.find("img").attr("src", card.attachments[0].url.replace("https://trello-attachments.s3.amazonaws.com", "http://galimberti.imgix.net") + "?q=75");
         $copy.find(".nome_contatti").text(card.name);
         $copy.find(".ruolo_contatti").text(parts[0]);
         $copy.find(".card").attr("data-target" , "#" + card.id);
@@ -205,9 +205,9 @@ $(window).on("ready", function() {
         // make a new modal
         var $modal = $("body").find($model.find(".card").attr("data-target"));
         var $modalCopy = $modal.clone();
-        $modalCopy.find(".img-fluid").attr("src", card.attachments[0].url);
+        $modalCopy.find(".img-fluid").attr("src", card.attachments[0].url.replace("https://trello-attachments.s3.amazonaws.com", "http://galimberti.imgix.net") + "?q=75");
         console.log(card.attachments[1].url);
-        $modalCopy.find(".settore").attr("src", card.attachments[1].url);
+        $modalCopy.find(".settore").attr("src", card.attachments[1].url.replace("https://trello-attachments.s3.amazonaws.com", "http://galimberti.imgix.net") + "?w=25");
         $modalCopy.attr("id", card.id);
         $modalCopy.find(".nome_contatti").text(card.name);
         $modalCopy.find(".ruolo_contatti span").text(parts[0]);
