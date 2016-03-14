@@ -184,7 +184,7 @@ $(window).on("ready", function() {
     var extractPhoneNumber = function(val) {
       var i = val.indexOf("+");
       if (i > -1)
-        return val.substring(i).replace("-", "").replace(/ /g,'');
+        return val.substring(i).replace("-", "").replace(/ /g,'').replace("'0'", "");
       return val;
     }
 
