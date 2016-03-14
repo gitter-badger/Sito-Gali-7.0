@@ -99,14 +99,14 @@ $(window).on("ready", function() {
   // optimize background img in header
   var w = Math.max(window.screen.width, window.screen.height);
 
-  var s = $(".section-fill-height .background-image").attr("style");
-  $(".section-fill-height .background-image").attr("style", s.replace("')", "?w=" + w + "')") );
+  // var s = $(".section-fill-height .background-image").attr("style");
+  // $(".section-fill-height .background-image").attr("style", s.replace("')", "?w=" + w + "')") );
 
-  // optimize carousel img in header
-  var s = $(".section-fill-height .carousel-item img").each(function() {
-    var src = $(this).attr("src");
-    $(this).attr("src", src + "?w=" + w);
-  });
+  // // optimize carousel img in header
+  // var s = $(".section-fill-height .carousel-item img").each(function() {
+  //   var src = $(this).attr("src");
+  //   $(this).attr("src", src + "?w=" + w);
+  // });
 
   $.ajaxSetup({ cache: true });
   $.getScript('//connect.facebook.net/en_US/sdk.js', function() {
@@ -184,7 +184,7 @@ $(window).on("ready", function() {
     var extractPhoneNumber = function(val) {
       var i = val.indexOf("+");
       if (i > -1)
-        return val.substring(i).replace("-", "").replace(/ /g,'');
+        return val.substring(i).replace("-", "").replace(/ /g,'').replace("'0'", "");
       return val;
     }
 
