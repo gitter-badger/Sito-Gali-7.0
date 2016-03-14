@@ -5079,6 +5079,12 @@ img.grayscale:hover {
 .modal-lg {
   max-width: 580px; }
 
+.modal .close {
+  opacity: 1;
+  background-color: transparent;
+  border: none;
+  color: white !important; }
+
 .modal-content {
   background-color: #373a3c; }
   .modal-content p {
