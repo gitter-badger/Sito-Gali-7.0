@@ -1,0 +1,88 @@
+.theme-default.nivoSlider {
+	position: relative;
+	background: url("loadings.gif") no-repeat scroll 50% 50%;
+	width:950px;
+}
+
+.theme-default .nivoSlider img {
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+
+.theme-default .nivoSlider a {
+	border: 0pt none;
+	display: block;
+}
+
+.theme-default .nivo-controlNav {
+	position:absolute;
+	bottom:-55px;
+	left:35px;
+}
+
+.2lines .theme-default .nivo-controlNav {
+	position:absolute;
+	bottom:-105px;
+	left:35px;
+}
+
+
+.theme-default .nivo-controlNav a {
+	display: block;
+	width: 75px;
+	height: 40px;
+
+	background: url("bullets.png") no-repeat scroll 0% 0% transparent;
+	text-indent: -9999px;
+	border: 0pt none;
+	float: left;
+	margin-right: 14px;
+	margin-bottom:10px;
+}
+
+.theme-default .nivo-controlNav a img {
+	width: 75px;
+	height: 40px;
+	border: 2px solid white;
+	box-shadow: 0px 0px 3px rgb(85, 85, 85);
+}
+
+.theme-default .nivo-controlNav a.active {
+	background-position: 0pt -22px;
+}
+
+.theme-default .nivo-directionNav a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url("arrows.png") no-repeat scroll 0% 0% transparent;
+	text-indent: -9999px;
+	border: 0pt none;
+}
+
+.theme-default a.nivo-nextNav {
+	background-position: -30px 0pt;
+	right: 15px;
+}
+
+.theme-default a.nivo-prevNav {
+	left: 15px;
+}
+
+.theme-default .nivo-caption {
+	font-family: Helvetica,Arial,sans-serif;
+	background-color: rgb(51, 51, 51);
+	color: white;
+	font-weight: bold;
+	display:none !important;
+}
+
+.theme-default .nivo-caption a {
+	border-bottom: 1px dotted rgb(255, 255, 255);
+}
+
+.theme-default .nivo-caption a:hover {
+	color: rgb(255, 255, 255);
+}
+

@@ -1,0 +1,370 @@
+#home .hero-unit{padding-bottom:0;height:300px;}
+#home .span4 {margin:0;padding:0;padding-bottom:30px;width:33%;}
+
+#home .span4 .editable{margin:0;padding:0px 30px;}
+
+#home .span4 .btn b {display:block;font-weight:normal;}
+#home .span4 p{margin-bottom:25px;}
+.bold {
+	font-weight:bold;
+}
+h1 a {color:#555555;}
+
+.feat {
+	display:block;
+	clear:both;
+	height:100px;
+	margin-left:25px;
+	padding-right:15px;
+	margin-bottom:20px;
+}
+	.feat img {
+		float:left;
+		margin-right:7px;
+	}
+
+.navbar-inner .nav li,.navbar-inner .nav a {
+	margin:0;
+	padding:0;
+}
+.nav {
+}
+
+ a.costruzioni {background: url("../img/costruzioni.png") no-repeat 50% 5px;}
+ a.tetti {background: url("../img/tetti.png") no-repeat 50% 5px;}
+ a.esterni{background: url("../img/esterni.png") no-repeat 50% 5px;}
+ a.pavimenti{
+	 background: url("../img/pavimenti.png") no-repeat 50% 5px;
+	  -webkit-border-radius:0 10px 10px  0;
+	   -moz-border-radius:0 10px 10px  0;
+	 border-radius:0 10px 10px  0;
+}
+ .active a.costruzioni,a.costruzioni:hover {background-color:#4f81bd !important;color:#FFFFFF !important;}
+ .active a.tetti,a.tetti:hover {background-color:#e36c0a !important;color:#FFFFFF !important;}
+ .active a.esterni,a.esterni:hover {background-color:#76923c !important;color:#FFFFFF !important;} 
+ .active a.pavimenti,a.pavimenti:hover {background-color:#c66462 !important;color:#FFFFFF !important;}  
+
+.row_cnt {
+	margin-top:30px;
+	padding-bottom:20px;
+}
+
+#row_grey {
+	background:#eeeeee;
+	padding:0;
+	padding:20px;
+	height:20px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+#row_grey .nav-pills li {	margin-right:36px;  }
+#row_grey .nav-pills a {
+	color:#555555;
+	font: normal normal 400 12px/20px Verdana;
+	line-height:20px;
+	margin:0;
+	padding:0;
+}
+
+.span4 hr,#colRight hr,.fullPage hr {
+	margin:10px 0;
+	padding:0;
+	height:1px;
+	overflow:hidden;
+	clear:both;
+	border:0;
+	background:#FFFFFF;
+	color:#FFFFFF;
+}
+
+li h3 {
+	margin:0;
+}
+
+
+.innercontent {
+	border-radius: 10px;
+	box-shadow: #999999 0px 0px 5px 0px;
+	background:#FFFFFF;
+}
+.innercontent .nav-pills,.innercontent .nav-pills li {display:inline;margin:0;padding:0;}
+.innercontent .nav-pills a:hover {background:transparent;text-decoration:none;}
+
+.innercontent  p{
+	margin:0;
+	padding:0;
+	text-align:justify;
+}
+
+.colored {
+	font: normal normal 400 16px/28px Verdana;
+
+}
+.colored li {
+	margin-left:0;
+	margin-top:5px;
+}
+.selected {color:#000000 !important;}
+ .page-header h1 {color: #000000;}
+.blue h1,.blue h2,.blue h3,.blue h5,.blue .colored {color: #4F81BD;}
+.blue .selected{color:#4F81BD !important;}
+
+.green h1,.green h2,.green h3,.green h5,.green .colored {color: #76923c;}
+.green .selected {color: #76923c !important;}
+.brg h1,.brg h2,.brg h3,.brg h5,.brg .colored{color: #e36c0a;}
+.brg .selected{color: #e36c0a !important;}
+.cst h1,.cst h2,.cst h3,.cst h5,.cst .colored {color: #c66462;}
+.cst  .selected {color: #c66462 !important;}
+.colored a {color:#343434;}
+
+
+.imgs {padding-top:30px;}
+.lright {float:right;position:relative;top:-15px;}
+
+.aright{
+	float:right;
+	border:15px solid #FFFFFF;
+}
+.aright img {
+	min-width:162px;
+}
+
+
+.btn {
+	width:200px;
+	margin-bottom:0px;
+	white-space:normal;
+	font-size:14px;
+	line-height:16px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.btns3 .btn {
+	font-size:13px;
+	height:30px;
+	width:33.33%;
+}
+
+.btns2 .btn {
+	font-size:13px;
+	height:30px;
+	width:170px;
+}
+
+
+.btn1 .btn {
+	width:230px;
+}
+
+.btns3 .btn:first-child,.btns2 .btn:first-child {line-height:30px;}
+
+#btnpdf img {display:block;float:left;position:relative;left:7px;top:7px;margin-right:-10px;}
+#btnpdf2 {width:370px;}
+#btnpdf2 img {position:absolute;margin-left:-25px;margin-top:1px;}
+.btns2 #btnpdf span {position:relative;top:7px;}
+
+
+.line span {
+	display:block;
+	float:left;
+	width:110px;
+}
+
+ .contacti  .lk {
+	float:right;
+	width:70px;
+	background-image:url(../img/logo_galimberti_grigio.png);
+	background-position: center 19px;
+	background-repeat:no-repeat;
+	color:#FFFFFF;
+	padding-top:54px;
+	height:28px;
+	margin:0;
+
+ }
+
+ .contacti address{
+	background:#efefef;
+	border-radius:4px;
+	font: normal normal 400 11px/20px Verdana;
+	float:left;
+	width:278px;
+	padding:0;
+	height:90px;
+	overflow:hidden;
+	padding-top:5px;
+	padding-left:15px;
+	color:#7a7a7a;
+ }
+ .contacti  a, #home #addr  a {color:#7a7a7a;text-decoration:none;}
+ .contacti b,#home #addr b {
+	font: normal normal 700 13px/20px Verdana;
+	white-space:nowrap;
+	color:#666666;
+ }
+#home #addr b { 
+ 	display:block;
+ 	height:20px;
+	background:url(../img/logo_s_grey.png) 0 0px no-repeat; 	
+	line-height:20px;
+	margin-bottom:10px;
+	font: normal normal bold 15px/20px  'Open Sans', sans-serif;	
+	padding-left:30px;
+ }
+ .contacti img {
+	float:left;
+	padding-right:18px;
+	padding-top:5px;
+	position:relative;
+	width:50px !important;
+ }
+
+
+.btn-group-vertical {position:relative;top:15px;}
+
+ #home #addr,.social  {
+	font: normal normal 400 12px/20px Verdana;
+	float:left;
+	padding:15px 10px;
+	width:210px;
+	background:#efefef;
+	color:#7a7a7a;
+	border-radius:8px;	
+  }
+
+ .contacti_h  .btn  {color:#FFFFFF;margin-left:0;}
+ .social a {display:block;width:50px;height:50px;float:left;margin:5px 10px;}
+ .social  {margin-bottom:25px;}
+ .social h6 {color:#666666;}
+ 
+.right,#colRight {float:right;}
+#colRight {padding-right:30px;}
+
+.btn-toolbar {margin:0;width:310px;}
+.span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11 {float:left;}
+
+
+
+footer {
+	width:100%;
+	height:33px;
+	background:#ababab;
+	margin-top:20px;
+}
+	.copy {
+	    color: #EFEFEF;
+	    display: block;
+	    font: normal normal 700 10.4px/33px Verdana;
+	    float:right;
+	    padding-right:20px;
+	}
+
+	footer .nav-pills > li > a:hover {
+	    background:#ababab;
+	}
+
+	footer ul,footer li,footer li a {margin:0 !important;padding:0 !important;list-style:none;}
+	footer li a:hover {text-decoration:underline;}
+	footer ul {padding-left:10px !important;width:600px;float:left;}
+	footer li {margin-right:20px !important;width:auto !important;display:inline;}
+	footer li a { height:33px;line-height:33px;width:auto !important;}
+	
+#home .span4 ul {
+	margin-top:10px;
+}
+
+.span6 p,.span5 p {
+	padding-bottom:10px;
+}
+
+
+
+	
+h2.sp {padding-left:20px;}
+.clearfix {height:1px;margin:0;clear:both;}
+
+.cLeft,.cRight {width:440px;float:left;padding:0;overflow:hidden;text-align:left;}
+.cRight {padding-left:25px;}
+/*------  sortable --------------------------*/
+#table{
+	clear: both; padding-left: 30px; padding-right: 30px;
+}
+  table {
+  	margin: 0px;
+    border:0px;
+    border-collapse:collapse
+  }
+  #tableel {
+  	width: 100%; font-size: 13px;
+  }
+  
+  thead {
+  	background-color: rgb(79, 129, 189);
+	color: white;
+    border: 0px;
+    line-height: 40px;
+  }
+  
+  thead tr th {
+    border: 0px;
+    cursor:pointer !important;  
+   font: normal normal normal 17px/30px  'Open Sans', sans-serif;      
+   text-align:left;
+    
+  }
+   tr{
+   	border-bottom:1px solid white;
+   }
+  
+  tbody {
+    text-align: left;
+  	line-height: 40px;
+  }
+
+      thead tr th ,tbody td{padding-left:10px;}
+  
+  tbody tr:nth-child(odd) { 
+    background-color:white; 
+  }
+  
+  tr:nth-child(even){ 
+    background-color:white; 
+ }
+
+
+ /*----------------- contact ----------------*/
+ .fullPage {
+ 	padding-left:20px;
+ 	
+ }
+
+  .fullPage  h2{
+  	color:#FFFFFF;
+  	background:#aaaaaa;
+  	padding-left:10px;
+  	margin-right:40px;
+  	margin-bottom:15px;
+  }
+ .contact {
+ 	float:left;
+ 	width:450px;
+ 	padding-left:10px;
+ 	margin-bottom:30px;
+ }
+ .contact ul, .contact li {
+ 	margin:0;
+ 	padding:0;
+ 	list-style:none;
+ }
+  .contact ul,.contact img {float:left;}
+  .contact img {margin-right:25px;width:80px;}
+  .contact a {color:#555555;}
+.contact li{line-height:20px;}
+ .contact li.y{font-weight:bold;color:#ac8100;margin:2px 0;}
+
+
+
+.modal-body {
+}
+ 

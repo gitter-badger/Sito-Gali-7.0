@@ -1,0 +1,189 @@
+body {text-align:center !important;width:100%;}
+
+.container {text-align:left;margin:auto;}
+
+.navbar {margin-bottom:5px;}
+.navbar-inner {
+	background:url(../img/ie/header.png) top left no-repeat;
+	width:968px !important;
+	height:85px !important;	
+	padding-top:7px !important;
+	padding-right:0px !important;
+	position:relative;
+	left:7px;
+	overflow:hidden;
+}
+.navbar-inner  .nav{
+	position:relative;
+	padding-right:8px;
+
+}
+
+a.pavimenti{ background:transparent !important;background: url("../img/ie/pavimenti.png") no-repeat top left !important;height:74px;} 
+.active a.pavimenti,a.pavimenti:hover{ background:transparent !important;background: url("../img/ie/pavimenti2.png") no-repeat top left !important;} 
+
+	.navbar-inner  li,.navbar-inner li a {
+		float:left !important;
+		margin:0 !important;
+		height:73px !important;
+	}
+	.navbar-inner li a {
+		padding:0 35px !important;
+	}
+	.navbar-inner li a,.navbar-inner li a:hover {
+		padding-top:50px !important;
+		height:23px !important;
+		color:#FFFFFF !important;
+	}
+#row_grey  {
+	background:url (../img/ie/row_grey.png) top left no-repeat;
+}
+
+.page-header {
+	width:auto;
+	float:left;
+}
+
+.btn {border:0;padding-left:0;padding-right:0;padding-bottom:0;background:#eaeaea url(../img/ie/btn.jpg) top left no-repeat ;}
+.btn:hover {background:#eaeaea url(../img/ie/btn2.jpg) top left no-repeat ;}
+.btnFooter,.btn:hover .btnFooter {display:block;height:10px;background:url(../img/ie/btnFooter.png) bottom left no-repeat ;}
+
+.btn-success{background:#eaeaea url(../img/ie/btn_g.png) top left no-repeat;}
+.btn-success:hover {background:#eaeaea url(../img/ie/btn_g2.png) top left no-repeat;}
+.btn-success .btnFooter,.btn-success:hover .btnFooter {display:block;height:10px;background:url(../img/ie/btn_gFooter.png) bottom left no-repeat ;}
+
+.btn-info{background:#eaeaea url(../img/ie/btn_b.png) top left no-repeat;}
+.btn-info:hover {background:#eaeaea url(../img/ie/btn_b2.png) top left no-repeat;}
+.btn-info .btnFooter,.btn-info:hover .btnFooter {display:block;height:10px;background:url(../img/ie/btn_bFooter.png) bottom left no-repeat ;}
+.hero-unit {width:950px !important;}
+#home .hero-unit {height:300px;overflow:hidden;width:950px;}
+#home .span4 .btn {width:230px;margin:0;}
+
+.innercontent {
+	background:url(../img/ie/bg.png) top left repeat-y;
+	width:968px;
+}
+
+#addr img {
+	border-right:1px;
+	
+}
+
+.social {
+	width:240px;
+	border: 1px solid #efefef;
+}
+
+ .contacti_h  #addr{
+ 	width:240px;
+ }
+
+#row_grey {
+	background:#FFFFFF url(../img/ie/rowgrey.png) top left no-repeat;
+	padding-left:25px;
+	padding-top:25px;
+}
+
+.row_cnt {padding-left:25px;}
+
+.hero-unit {width:940px;margin-left:9px;}
+#colRight {padding-right:1px;width:405px;margin-right:30px;}
+
+.contacti img {
+	width:50px !important;
+	border-right:20px solid #efefef;
+}
+
+.contacti {height:100px;margin:0;padding:0;}
+.contacti #addr {width:278px;height:90px;}
+
+.lk {
+	margin:0 !important;
+	width:100px !important;
+	height:94px !important; 
+	overflow:hidden;
+	padding:0 !important;
+	line-height:94px;
+	text-indent:100px;
+	background:url(../img/ie/azienda.png) top left no-repeat !important;
+}
+
+.social{width:210px;}
+
+h3 {margin-top:15px;}
+
+.btn-toolbar .btn {margin:0;padding:0;float:left;width:135px;background:url(../img/ie/btn_r.png) top right repeat-y;height:40px;padding-top:10px;}
+.btn-toolbar {width:405px;overflow:hidden;background:url(../img/ie/toolbar.png) top left no-repeat;height:52px;padding-top:2px;padding-bottom:2px;margin:0 !important;}
+
+.btns2 .btn {
+	width:200px !important;
+}
+
+.lk:hover {background:url(../img/ie/azienda.png) 0 -100px no-repeat !important;}
+
+.btn-group-vertical .btn {
+	background:#2e95b3 url(../img/ie/btn_vt.png) top left repeat-x;height:40px;
+	border-left:1px solid #3b96b1;
+	border-right:1px solid #3b96b1;
+	border-top:1px solid #77c5dc !important;	
+	border-bottom:1px solid #419db8;	
+	width:209px;
+	display:block !important;
+	clear:both !important;
+	float:left !important;
+	margin:0 !important;
+
+}
+
+.btn-group-vertical .btn:hover {
+	border-bottom:1px solid #237087;
+	background:#2e95b3 url(../img/ie/btn_vt2.png) top left repeat-x;		
+}
+
+.vert_top {
+	width:214px;
+	position:absolute;
+	clear:both;
+	height:4px;
+	background:#FFF url(../img/ie/vTop.png) top left no-repeat;
+	top:0;
+	left:0;
+	z-index:999999;
+}
+
+.btn-group-vertical {
+}
+
+.vert_footer {
+	width:100%;
+	height:3px;
+	background:url(../img/ie/vFooter.png) top left no-repeat;
+	z-index:9999992;
+	display:none;
+
+}
+
+.imgs  {
+	margin:0;
+	padding:0;
+	padding-top:10px;
+}
+
+#btnpdf {background:transparent;}
+#btnpdf img{left:25px;}
+#btnpdf2 {width:391px;background:url(../img/ie/btnLarge.png) top left no-repeat;}
+#btnpdf2 .btnFooter{background:url(../img/ie/btnFooterLarge2.png) top left no-repeat;position:relative;top:3px;}
+
+.footerCnt {
+	width:100%;
+	height:22px;
+	background:url(../img/ie/footer.jpg) top left no-repeat;
+}
+
+footer {position:relative;left:9px;}
+
+footer a {
+	color:#FFFFFF !important;
+	font-size:10px;
+}
+.ModalsContent {text-align:left !important;}
