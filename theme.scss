@@ -339,14 +339,13 @@ img.grayscale:hover       {
     position: fixed;
     top: 10px; 
     right: 1px;
-  }
+  } 
 
   .dropdown-menu-right {
     right: -90px;
   }
 
   img { 
-   pointer-events:none;
     width:100%;
   }
 }
