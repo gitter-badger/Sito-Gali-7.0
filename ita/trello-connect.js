@@ -354,7 +354,6 @@ $(window).on("ready", function() {
       
       var $img = $("<img>");
       $img.attr("src", $(img).attr("src"));
-      $img.css("pointer-events", "none");
       $wrapper.append($img);
       
       $wrapper.find(".fa-facebook").on("click", function() {
@@ -374,20 +373,27 @@ $(window).on("ready", function() {
         // window.open(url, "", "height=500,width=500,top=100px,menubar=no");
       });
 
-      $wrapper.find(".fa-chain").on("click", function() {
-          var input = $wrapper.find("input")[0];
-          input.setSelectionRange(0, input.value.length);
-      })
+    
+
+     
+
+
       // block the body scroll
       $("body").addClass("noscroll");
       $("body").append($wrapper);
+       $wrapper.find(".fa-chain").on("click", function(e) {
+          e.preventDefault();
+          var input = $wrapper.find("input")[0];
+          input.setSelectionRange(0, input.value.length);
+      },true)
 
-      $wrapper.one("click", function() {
+      $wrapper.find("img").on("click", function() {
         // body back to scroll
         $("body").removeClass("noscroll");
         $wrapper.remove();
         window.history.pushState(null, "", "#");
       });
+      
     }
 
     $model.parent().find("img").on("click", function() {
