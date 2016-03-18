@@ -5099,3 +5099,10 @@ hr.light {
 
 p.CTA {
   line-height: 200%; }
+
+/* FIXES SPECIFICI PER DEVICES */
+body .no-videoautoplay {
+  display: none; }
+
+.no-videoautoplay .no-videoautoplay {
+  display: block; }
