@@ -340,7 +340,7 @@ $(window).on("ready", function() {
       // create the wrapper and the full width image
       var $wrapper = $("<div class='full-screen'>\
                           <div class='btn-group m-t-1 m-x-1  pull-xs-right'>\
-                            <label class='btn btn-info' style='pointer-events:none'>Immagine " + index + "</label>\
+                            <label class='btn btn-info' style='pointer-events:none'>N° " + index + "</label>\
                             <div class='btn-group'>\
                               <button class='btn btn-info fa fa-chain' data-toggle='dropdown'></button>\
                               <div class='dropdown-menu dropdown-menu-right p-a-1'>\
@@ -349,6 +349,7 @@ $(window).on("ready", function() {
                             </div>\
                             <a class='btn btn-info fa fa-envelope' href='mailto:?body=" + document.location + "'></a>\
                             <a class='btn btn-info fa fa-facebook'></a>\
+                            <a class='btn btn-info fa fa-close'></a>\
                           </div>\
                         </div>");
       
@@ -373,7 +374,11 @@ $(window).on("ready", function() {
         // window.open(url, "", "height=500,width=500,top=100px,menubar=no");
       });
 
-    
+     $wrapper.find(".fa-close").on("click", function() {
+        $("body").removeClass("noscroll");
+        $wrapper.remove();
+        window.history.pushState(null, "", "#");
+      });
 
      
 
