@@ -392,6 +392,10 @@ body .no-videoautoplay {
   display: none;
 }
 
+.no-video .no-video {
+  display:none;
+}
+
 .no-videoautoplay .no-videoautoplay {
   display:block;
 }
