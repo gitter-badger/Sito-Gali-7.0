@@ -62,14 +62,13 @@
   <div class="section section-fill-height">
     <div class="background-image hidden-md-up" style="background-image : url('http://galimberti-git.imgix.net/assets/azienda/costruzioni.jpg?w=600&amp;q=50')"></div>
     <div class="background-video-holder hidden-sm-down">
-      <video class="background-video" src="https://player.vimeo.com/external/155097382.hd.mp4?s=f6174e9c3a00bc1bc85e78168499d7089e1e47c7&amp;profile_id=113" autoplay="autoplay" loop="loop"></video>
+      <video class="background-video" poster="http://galimberti-git.imgix.net/assets/azienda/costruzioni.jpg?w=600&amp;q=50" src="https://player.vimeo.com/external/155097382.hd.mp4?s=f6174e9c3a00bc1bc85e78168499d7089e1e47c7&amp;profile_id=113" autoplay="autoplay" loop="loop"></video>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center text-xs-center">
           <h1 class="display-4 pi-draggable pi-item text-inverse">Costruzioni in bioedilizia</h1>
-          <br>
-          <i class="-circle fa fa-4x fa-fw fa-play-circle-o text-muted"></i>
+          <a class="hidden-sm-down no-video no-videoautoplay center-block fa fa-4x fa-fw fa-play-circle-o m-y-2 text-inverse" onclick="$('video')[0].play();$(this).hide()"></a>
         </div>
       </div>
     </div>
