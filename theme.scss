@@ -395,3 +395,7 @@ body .no-videoautoplay {
 .no-videoautoplay .no-videoautoplay {
   display:block;
 }
+
+body.no-video .background-video-holder {
+  display:none;
+}
