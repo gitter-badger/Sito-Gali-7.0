@@ -196,6 +196,7 @@ $(window).on("ready", function() {
       try {
         if (card.idList != idList)
         return;
+        
         console.log(card);
         var $copy = $model.clone();
         var parts = card.desc.split("\n");
@@ -205,6 +206,12 @@ $(window).on("ready", function() {
         $copy.find(".card").attr("data-target" , "#" + card.id);
         $copy.show();
         $model.after($copy);
+
+        history.pushState({}, "page 2", "index.html");
+
+        $(window).on('popstate', function() { 
+          $(".modal").modal('hide');
+        });
 
         // make a new modal
         var $modal = $("body").find($model.find(".card").attr("data-target"));
@@ -361,6 +368,10 @@ $(window).on("ready", function() {
       $img.attr("src", $(img).attr("src"));
       $wrapper.append($img);
       
+
+      ;
+
+
       $wrapper.find(".fa-facebook").on("click", function() {
         FB.ui(
         {
@@ -387,7 +398,11 @@ $(window).on("ready", function() {
         window.history.pushState(null, "", "#");
       });
 
-     
+      $(window).on('popstate', function() { 
+          $("body").removeClass("noscroll");
+        $wrapper.remove();
+        // window.history.pushState(null, "", "#");
+      })
 
 // >>>>>>> master
 
