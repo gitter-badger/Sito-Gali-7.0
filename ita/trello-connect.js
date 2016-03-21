@@ -3,7 +3,7 @@
 var markscale = 10;   // percentuale larghezza watermark rispetto all'immagine
 var markpad = 10;     // padding watermark
 var markurl = "https://raw.githubusercontent.com/ggali/Sito-Gali-7.0/master/assets/icone/galimberti_watermark_white.png";
-var imagesLimit = 15;
+var imagesLimit = 100;
 
 // jquery visible
 // !function(t){var i=t(window);t.fn.visible=function(t,e,o){if(!(this.length<1)){var r=this.length>1?this.eq(0):this,n=r.get(0),f=i.width(),h=i.height(),o=o?o:"both",l=e===!0?n.offsetWidth*n.offsetHeight:!0;if("function"==typeof n.getBoundingClientRect){var g=n.getBoundingClientRect(),u=g.top>=0&&g.top<h,s=g.bottom>0&&g.bottom<=h,c=g.left>=0&&g.left<f,a=g.right>0&&g.right<=f,v=t?u||s:u&&s,b=t?c||a:c&&a;if("both"===o)return l&&v&&b;if("vertical"===o)return l&&v;if("horizontal"===o)return l&&b}else{var d=i.scrollTop(),p=d+h,w=i.scrollLeft(),m=w+f,y=r.offset(),z=y.top,B=z+r.height(),C=y.left,R=C+r.width(),j=t===!0?B:z,q=t===!0?z:B,H=t===!0?R:C,L=t===!0?C:R;if("both"===o)return!!l&&p>=q&&j>=d&&m>=L&&H>=w;if("vertical"===o)return!!l&&p>=q&&j>=d;if("horizontal"===o)return!!l&&m>=L&&H>=w}}}}(jQuery);
@@ -344,7 +344,7 @@ $(window).on("ready", function() {
       // create the wrapper and the full width image
       var $wrapper = $("<div class='full-screen'>\
                           <div class='btn-group m-t-1 m-x-1  pull-xs-right'>\
-                            <label class='btn btn-info' style='pointer-events:none'>Immagine " + index + "</label>\
+                            <label class='btn btn-info' style='pointer-events:none'>N° " + index + "</label>\
                             <div class='btn-group'>\
                               <button class='btn btn-info fa fa-chain' data-toggle='dropdown'></button>\
                               <div class='dropdown-menu dropdown-menu-right p-a-1'>\
@@ -353,6 +353,7 @@ $(window).on("ready", function() {
                             </div>\
                             <a class='btn btn-info fa fa-envelope' href='mailto:?body=" + document.location + "'></a>\
                             <a class='btn btn-info fa fa-facebook'></a>\
+                            <a class='btn btn-info fa fa-close'></a>\
                           </div>\
                         </div>");
       
@@ -375,7 +376,20 @@ $(window).on("ready", function() {
 
         // var url = "http://www.facebook.com/sharer/sharer.php?p[summary]=Galimberti&p[url]=" + encodeURI($(img).attr("src")) ;
         // window.open(url, "", "height=500,width=500,top=100px,menubar=no");
-    });
+// <<<<<<< HEAD
+//     });
+// =======
+      });
+
+     $wrapper.find(".fa-close").on("click", function() {
+        $("body").removeClass("noscroll");
+        $wrapper.remove();
+        window.history.pushState(null, "", "#");
+      });
+
+     
+
+// >>>>>>> master
 
       // block the body scroll
       $("body").addClass("noscroll");
