@@ -420,8 +420,6 @@ $(window).on("ready", function() {
         // window.history.pushState(null, "", "#");
       })
 
-// >>>>>>> master
-
       // block the body scroll
       $("body").addClass("noscroll");
       $("body").append($wrapper);
