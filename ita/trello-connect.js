@@ -384,10 +384,6 @@ $(window).on("ready", function() {
       $img.attr("src", $(img).attr("src"));
       $wrapper.append($img);
       
-
-      ;
-
-
       $wrapper.find(".fa-facebook").on("click", function() {
         FB.ui(
         {
@@ -401,11 +397,6 @@ $(window).on("ready", function() {
         }
       );
 
-        // var url = "http://www.facebook.com/sharer/sharer.php?p[summary]=Galimberti&p[url]=" + encodeURI($(img).attr("src")) ;
-        // window.open(url, "", "height=500,width=500,top=100px,menubar=no");
-// <<<<<<< HEAD
-//     });
-// =======
       });
 
      $wrapper.find(".fa-close").on("click", function() {
