@@ -105,24 +105,21 @@ $(window).on("ready", function() {
   // try to start video and connect play button
   var _playing = false; 
   window.toggleVideo = function() {
-    if (_playing)
-      $('video')[0].pause();
-    else 
+    // if (_playing)
+    //   $('video')[0].pause();
+    // else 
       $('video')[0].play();
-
   }
   $(".section-fill-height video")[0].play();
   $(".section-fill-height video").on("playing", function() {
-    _playing = true;
-    $(".section-fill-height .need-video.fa").removeClass("fa-play-circle-o");
-    $(".section-fill-height .need-video.fa").addClass("fa-pause-circle-o");
+    $(".section-fill-height a.need-video").remove();
   });
 
-  $(".section-fill-height video").on("pause", function() {
-    _playing = false;
-    $(".section-fill-height .need-video.fa").removeClass("fa-pause-circle-o");
-    $(".section-fill-height .need-video.fa").addClass("fa-play-circle-o");
-  });
+  // $(".section-fill-height video").on("pause", function() {
+  //   _playing = false;
+  //   $(".section-fill-height .need-video.fa").removeClass("fa-pause-circle-o");
+  //   $(".section-fill-height .need-video.fa").addClass("fa-play-circle-o");
+  // });
 
 
   // optimize background img in header
