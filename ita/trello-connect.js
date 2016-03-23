@@ -105,15 +105,16 @@ $(window).on("ready", function() {
   // try to start video and connect play button
   var _playing = false; 
   window.toggleVideo = function() {
-    // if (_playing)
-    //   $('video')[0].pause();
-    // else 
-      $('video')[0].play();
+    $('video')[0].play();
   }
-  $(".section-fill-height video")[0].play();
-  $(".section-fill-height video").on("playing", function() {
-    $(".section-fill-height a.need-video").remove();
-  });
+  
+  if ($(".section-fill-height video").length) {
+    $(".section-fill-height video")[0].play();
+    $(".section-fill-height video").on("playing", function() {
+      $(".section-fill-height a.need-video").remove();
+    });  
+  }
+  
 
   // $(".section-fill-height video").on("pause", function() {
   //   _playing = false;
