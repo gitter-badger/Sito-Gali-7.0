@@ -3,7 +3,7 @@
 var markscale = 10;   // percentuale larghezza watermark rispetto all'immagine
 var markpad = 10;     // padding watermark
 var markurl = "https://raw.githubusercontent.com/ggali/Sito-Gali-7.0/master/assets/icone/galimberti_watermark_white.png";
-var imagesLimit = 15;
+var imagesLimit = 100;
 
 // jquery visible
 // !function(t){var i=t(window);t.fn.visible=function(t,e,o){if(!(this.length<1)){var r=this.length>1?this.eq(0):this,n=r.get(0),f=i.width(),h=i.height(),o=o?o:"both",l=e===!0?n.offsetWidth*n.offsetHeight:!0;if("function"==typeof n.getBoundingClientRect){var g=n.getBoundingClientRect(),u=g.top>=0&&g.top<h,s=g.bottom>0&&g.bottom<=h,c=g.left>=0&&g.left<f,a=g.right>0&&g.right<=f,v=t?u||s:u&&s,b=t?c||a:c&&a;if("both"===o)return l&&v&&b;if("vertical"===o)return l&&v;if("horizontal"===o)return l&&b}else{var d=i.scrollTop(),p=d+h,w=i.scrollLeft(),m=w+f,y=r.offset(),z=y.top,B=z+r.height(),C=y.left,R=C+r.width(),j=t===!0?B:z,q=t===!0?z:B,H=t===!0?R:C,L=t===!0?C:R;if("both"===o)return!!l&&p>=q&&j>=d&&m>=L&&H>=w;if("vertical"===o)return!!l&&p>=q&&j>=d;if("horizontal"===o)return!!l&&m>=L&&H>=w}}}}(jQuery);
@@ -87,8 +87,13 @@ var b=this.element,d=""!==b.id?b.id:null;n(a,c,d);"ready"!=a?g("addEventListener
 window.$f=e}();
 
 
+/*! modernizr 3.3.1 (Custom Build) | MIT *
+ * http://modernizr.com/download/?-video-setclasses !*/
+!function(e,n,a){function o(e){var n=p.className,a=Modernizr._config.classPrefix||"";if(f&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+a+"no-js(\\s|$)");n=n.replace(o,"$1"+a+"js$2")}Modernizr._config.enableClasses&&(n+=" "+a+e.join(" "+a),f?p.className.baseVal=n:p.className=n)}function s(e,n){return typeof e===n}function t(){var e,n,a,o,t,c,r;for(var p in l)if(l.hasOwnProperty(p)){if(e=[],n=l[p],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(a=0;a<n.options.aliases.length;a++)e.push(n.options.aliases[a].toLowerCase());for(o=s(n.fn,"function")?n.fn():n.fn,t=0;t<e.length;t++)c=e[t],r=c.split("."),1===r.length?Modernizr[r[0]]=o:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=o),i.push((o?"":"no-")+r.join("-"))}}function c(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):f?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}var i=[],l=[],r={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var a=this;setTimeout(function(){n(a[e])},0)},addTest:function(e,n,a){l.push({name:e,fn:n,options:a})},addAsyncTest:function(e){l.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=r,Modernizr=new Modernizr;var p=n.documentElement,f="svg"===p.nodeName.toLowerCase();Modernizr.addTest("video",function(){var e=c("video"),n=!1;try{(n=!!e.canPlayType)&&(n=new Boolean(n),n.ogg=e.canPlayType('video/ogg; codecs="theora"').replace(/^no$/,""),n.h264=e.canPlayType('video/mp4; codecs="avc1.42E01E"').replace(/^no$/,""),n.webm=e.canPlayType('video/webm; codecs="vp8, vorbis"').replace(/^no$/,""),n.vp9=e.canPlayType('video/webm; codecs="vp9"').replace(/^no$/,""),n.hls=e.canPlayType('application/x-mpegURL; codecs="avc1.42E01E"').replace(/^no$/,""))}catch(a){}return n}),t(),o(i),delete r.addTest,delete r.addAsyncTest;for(var d=0;d<Modernizr._q.length;d++)Modernizr._q[d]();e.Modernizr=Modernizr}(window,document);
+
 
 $(window).on("ready", function() {
+
 
   // highlight dell'attivo nella navbar
   $(".navbar [href]").each(function() {
@@ -96,17 +101,30 @@ $(window).on("ready", function() {
       $(this).addClass("active");
   });
 
+
+  // try to start video and connect play button
+  var _playing = false; 
+  window.toggleVideo = function() {
+    $('video')[0].play();
+  }
+  
+  if ($(".section-fill-height video").length) {
+    $(".section-fill-height video")[0].play();
+    $(".section-fill-height video").on("playing", function() {
+      $(".section-fill-height a.need-video").remove();
+    });  
+  }
+  
+
+  // $(".section-fill-height video").on("pause", function() {
+  //   _playing = false;
+  //   $(".section-fill-height .need-video.fa").removeClass("fa-pause-circle-o");
+  //   $(".section-fill-height .need-video.fa").addClass("fa-play-circle-o");
+  // });
+
+
   // optimize background img in header
   var w = Math.max(window.screen.width, window.screen.height);
-
-  // var s = $(".section-fill-height .background-image").attr("style");
-  // $(".section-fill-height .background-image").attr("style", s.replace("')", "?w=" + w + "')") );
-
-  // // optimize carousel img in header
-  // var s = $(".section-fill-height .carousel-item img").each(function() {
-  //   var src = $(this).attr("src");
-  //   $(this).attr("src", src + "?w=" + w);
-  // });
 
   $.ajaxSetup({ cache: true });
   $.getScript('//connect.facebook.net/en_US/sdk.js', function() {
@@ -192,6 +210,7 @@ $(window).on("ready", function() {
       try {
         if (card.idList != idList)
         return;
+        
         console.log(card);
         var $copy = $model.clone();
         var parts = card.desc.split("\n");
@@ -201,6 +220,12 @@ $(window).on("ready", function() {
         $copy.find(".card").attr("data-target" , "#" + card.id);
         $copy.show();
         $model.after($copy);
+
+        history.pushState({}, "page 2", "index.html");
+
+        $(window).on('popstate', function() { 
+          $(".modal").modal('hide');
+        });
 
         // make a new modal
         var $modal = $("body").find($model.find(".card").attr("data-target"));
@@ -340,7 +365,7 @@ $(window).on("ready", function() {
       // create the wrapper and the full width image
       var $wrapper = $("<div class='full-screen'>\
                           <div class='btn-group m-t-1 m-x-1  pull-xs-right'>\
-                            <label class='btn btn-info' style='pointer-events:none'>Immagine " + index + "</label>\
+                            <label class='btn btn-info' style='pointer-events:none'>N° " + index + "</label>\
                             <div class='btn-group'>\
                               <button class='btn btn-info fa fa-chain' data-toggle='dropdown'></button>\
                               <div class='dropdown-menu dropdown-menu-right p-a-1'>\
@@ -349,6 +374,7 @@ $(window).on("ready", function() {
                             </div>\
                             <a class='btn btn-info fa fa-envelope' href='mailto:?body=" + document.location + "'></a>\
                             <a class='btn btn-info fa fa-facebook'></a>\
+                            <a class='btn btn-info fa fa-close'></a>\
                           </div>\
                         </div>");
       
@@ -369,14 +395,19 @@ $(window).on("ready", function() {
         }
       );
 
-        // var url = "http://www.facebook.com/sharer/sharer.php?p[summary]=Galimberti&p[url]=" + encodeURI($(img).attr("src")) ;
-        // window.open(url, "", "height=500,width=500,top=100px,menubar=no");
       });
 
-    
+     $wrapper.find(".fa-close").on("click", function() {
+        $("body").removeClass("noscroll");
+        $wrapper.remove();
+        window.history.pushState(null, "", "#");
+      });
 
-     
-
+      $(window).on('popstate', function() { 
+          $("body").removeClass("noscroll");
+        $wrapper.remove();
+        // window.history.pushState(null, "", "#");
+      })
 
       // block the body scroll
       $("body").addClass("noscroll");
