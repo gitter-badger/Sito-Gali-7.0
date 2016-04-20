@@ -241,12 +241,16 @@ h1, h2, h3, h4, h5, h6 {
     .active {
       border-bottom: 3px solid $brand-primary;
     }
- 
 	img {
   height : 36px;
 	}
 }
 
+.navbar .nav-dark {
+  .active {
+      border-bottom: 3px solid $brand-primary;
+    }
+}
 
 img.grayscale       {
   filter : url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
@@ -386,10 +390,21 @@ p.CTA  {
    line-height:200%;
  }
 
-.primolegno {
-  background-image: url('http://galimberti-git.imgix.net/assets/primolegno/Pattern_primolegno.png?w=400');
+.primochiaro {
+  background-image: url('http://galimberti-git.imgix.net/assets/primolegno/Pattern_primochiaro.png?w=400');
 }
 
+.primoscuro {
+  background-color: rgba(0,0,0,0.065);
+}
+
+.primoarancio {
+  background-image: url('http://galimberti-git.imgix.net/assets/primolegno/Pattern_primoarancio.png?w=400');
+}
+
+.primobianco {
+  background-color: rgba(255,255,255,1);
+}
 
 /* FIXES SPECIFICI PER DEVICES */
 body .no-videoautoplay {
