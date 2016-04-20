@@ -5117,6 +5117,9 @@ p.CTA {
 .primoscuro {
   background-color: rgba(0, 0, 0, 0.065); }
 
+.primoarancio {
+  background-image: url("http://galimberti-git.imgix.net/assets/primolegno/Pattern_primoarancio.png?w=400"); }
+
 /* FIXES SPECIFICI PER DEVICES */
 body .no-videoautoplay {
   display: none; }
