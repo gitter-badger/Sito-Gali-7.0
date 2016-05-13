@@ -5123,9 +5123,6 @@ p.CTA {
 .primobianco {
   background-color: white; }
 
-.map-cantieri {
-  background-image: url("http://galimberti-git.imgix.net/map_cantieri"); }
-
 /* FIXES SPECIFICI PER DEVICES */
 body .no-videoautoplay {
   display: none; }
