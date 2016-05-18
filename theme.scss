@@ -207,6 +207,16 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
+.map_lg           {
+  max-height : 50%;
+  overflow: hidden;
+}
+
+.map_xs           {
+  max-height : 80%;
+  overflow: hidden;
+}
+
 .sticky           {
   position : -webkit-sticky;
   position : sticky;
