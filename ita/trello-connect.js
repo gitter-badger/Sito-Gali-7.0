@@ -3,7 +3,7 @@
 var markscale = 10;   // percentuale larghezza watermark rispetto all'immagine
 var markpad = 10;     // padding watermark
 var markurl = "https://raw.githubusercontent.com/ggali/Sito-Gali-7.0/master/assets/icone/galimberti_watermark_white.png";
-var imagesLimit = 25;
+var imagesLimit = 50;
 
 
 // init scrolldepth
